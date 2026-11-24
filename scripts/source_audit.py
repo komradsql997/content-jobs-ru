@@ -13,7 +13,7 @@ AGENT="ContentJobsRU/0.2 (+https://github.com/komradsql997/content-jobs-ru)"
 def probe(entry):
     row={"id":entry["id"],"name":entry["name"],"url":entry["url"],"kind":entry["type"]}
     if entry["type"]=="telegram_channel":
-        row["status"]="PENDING_PERMISSION"
+        row["status"]="PENDING_LICENSED_FEED"
         return row
     try:
         request=Request(entry["url"],headers={"User-Agent":AGENT,"Accept-Language":"ru-RU,ru;q=0.9"})
