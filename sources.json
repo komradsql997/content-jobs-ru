@@ -13,7 +13,10 @@
       "seed_urls": [
         "https://yandex.ru/jobs/vacancies/redaktor-b2bkommunikatsiy-v-market-47744",
         "https://yandex.ru/jobs/vacancies/shefredaktor-_-lid-iitrenerov-po-russkomu-yaziku-v-yandeks-obrazovanie-49487"
-      ]
+      ],
+      "seed_locations": {
+        "https://yandex.ru/jobs/vacancies/shefredaktor-_-lid-iitrenerov-po-russkomu-yaziku-v-yandeks-obrazovanie-49487": "Удалённо из России"
+      }
     },
     {
       "name": "Точка Банк",

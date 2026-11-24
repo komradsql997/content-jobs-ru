@@ -152,7 +152,7 @@ def make_job(title,company,url,description="",location="",salary=""):
     job["id"]=hashlib.sha256((company.lower()+"|"+title.lower()).encode()).hexdigest()[:16]
     return job
 
-def parse_detail(url,company):
+def parse_detail(url,company,location_hint=""):
     soup=http_get(url)
     for tag in jobs_schema(soup):
         result=structured_job(tag,url,company)
@@ -171,7 +171,7 @@ def parse_detail(url,company):
     else:
         m=RU.search(full_text[:900])
         if m: location=m.group(0)
-    return make_job(title,company,url,excerpt,location)
+    return make_job(title,company,url,excerpt,location_hint or location)
 
 
 def collect_company(source):
@@ -200,7 +200,7 @@ def collect_company(source):
     priority=sorted(candidates.items(),key=lambda entry:(0 if entry[0] in [canonical(s) for s in source.get("seed_urls",[])] else 1, 0 if is_role(entry[1][0]+" "+entry[1][1]) else 1))
     for url,(label,parent) in priority[:MAX_DETAILS]:
         try:
-            item=parse_detail(url,name);stats["detail_checked"]+=1
+            item=parse_detail(url,name,source.get("seed_locations",{}).get(url,""));stats["detail_checked"]+=1
             if item: found.append(item)
         except Exception as e:
             stats.setdefault("detail_errors",[]).append(str(e)[:130])
