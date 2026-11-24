@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T12:28:47Z",
+  "updated_at": "2026-11-24T12:31:13Z",
   "total": 1,
   "status": {
     "Яндекс": {
@@ -39,9 +39,9 @@
     "2ГИС": {
       "status": "NO_MATCHES_IN_CHECKED_PAGES",
       "listing_pages": 1,
-      "links": 18,
-      "candidate_links": 15,
-      "detail_checked": 15,
+      "links": 45,
+      "candidate_links": 0,
+      "detail_checked": 0,
       "saved": 0
     },
     "Ozon": {
@@ -106,9 +106,9 @@
     "Lamoda": {
       "status": "NO_MATCHES_IN_CHECKED_PAGES",
       "listing_pages": 1,
-      "links": 32,
-      "candidate_links": 0,
-      "detail_checked": 0,
+      "links": 39,
+      "candidate_links": 4,
+      "detail_checked": 1,
       "saved": 0
     },
     "ВкусВилл": {
@@ -118,7 +118,393 @@
       "candidate_links": 0,
       "detail_checked": 0,
       "saved": 0,
-      "error": "Remote end closed connection without response"
+      "error": "<urlopen error timed out>"
+    },
+    "Самокат": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "RWB (Wildberries и Russ)": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 498: "
+    },
+    "VK": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 68,
+      "candidate_links": 41,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Авито": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 84,
+      "candidate_links": 3,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Сбер": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [Errno 111] Connection refused>"
+    },
+    "ВТБ": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+    },
+    "Газпром": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 7,
+      "candidate_links": 5,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Т2": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    "Пятёрочка": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Перекрёсток": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 28,
+      "candidate_links": 1,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Магнит": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Магнит Тех": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Додо Пицца": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Вкусно — и точка": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "The read operation timed out"
+    },
+    "Burger King Россия": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 46,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Аптеки Апрель": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporaryRedirect"
+    },
+    "Авиасейлс": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 19,
+      "candidate_links": 18,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Рамблер": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 37,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Литрес": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 148,
+      "candidate_links": 2,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Аскона": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 23,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Диван.ру": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 292,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Лемана ПРО": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 49,
+      "candidate_links": 34,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Hoff": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "ВсеИнструменты.ру": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Эксмо": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 139,
+      "candidate_links": 70,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Лента": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 3,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Спортмастер": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "Золотое Яблоко": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Ингосстрах": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Skillbox": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 71,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Алабуга": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+    },
+    "Selectel": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 243,
+      "candidate_links": 29,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Фоксфорд": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 38,
+      "candidate_links": 31,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Нетология": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "МТС Банк": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "Tilda Publishing": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 22,
+      "candidate_links": 13,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Профи.ру": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 44,
+      "candidate_links": 15,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Билайн": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "НСПК": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+    },
+    "КРОК": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 66,
+      "candidate_links": 52,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Группа Астра": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "Ситидрайв": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 60,
+      "candidate_links": 6,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Банк России": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 58,
+      "candidate_links": 21,
+      "detail_checked": 3,
+      "saved": 0
+    },
+    "МегаФон": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 17,
+      "candidate_links": 12,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Яндекс Образование": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 68,
+      "candidate_links": 64,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Яндекс Маркет": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 86,
+      "candidate_links": 82,
+      "detail_checked": 4,
+      "saved": 0
     }
   },
   "jobs": [
@@ -136,8 +522,8 @@
       "location": "Удалённо из России",
       "salary": "",
       "category": "Руководство",
-      "seen_at": "2026-11-24T12:28:47Z",
-      "first_seen_at": "2026-11-24T12:28:47Z",
+      "seen_at": "2026-11-24T12:31:13Z",
+      "first_seen_at": "2026-11-24T12:31:13Z",
       "level": "lead",
       "work_format": "Удалённо",
       "city": "Удалённо",
