@@ -1,0 +1,915 @@
+{
+  "meta": {
+    "generated_at": "2026-11-24",
+    "method": "curated from published listings of company career sites and specialist Telegram channels; presence in catalog is not automatic integration, employment activity, or authorization",
+    "coverage": "Russian employment intended; each vacancy must be checked for Russia-only eligibility",
+    "total": 105,
+    "company_sources": 60,
+    "telegram_sources": 45,
+    "verified_ingestors": [
+      "Яндекс"
+    ]
+  },
+  "sources": [
+    {
+      "id": "company-1",
+      "type": "company_career",
+      "name": "Яндекс",
+      "url": "https://yandex.ru/jobs/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-2",
+      "type": "company_career",
+      "name": "Самокат",
+      "url": "https://vacancy.samokat.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-3",
+      "type": "company_career",
+      "name": "Ozon",
+      "url": "https://career.ozon.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-4",
+      "type": "company_career",
+      "name": "RWB (Wildberries и Russ)",
+      "url": "https://career.rwb.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-5",
+      "type": "company_career",
+      "name": "VK",
+      "url": "https://team.vk.company/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-6",
+      "type": "company_career",
+      "name": "Авито",
+      "url": "https://career.avito.com/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-7",
+      "type": "company_career",
+      "name": "Т-Банк",
+      "url": "https://www.tbank.ru/career/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-8",
+      "type": "company_career",
+      "name": "Сбер",
+      "url": "https://sberbank-talents.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-9",
+      "type": "company_career",
+      "name": "ВТБ",
+      "url": "https://rabota.vtb.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-10",
+      "type": "company_career",
+      "name": "Альфа-Банк",
+      "url": "https://job.alfabank.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-11",
+      "type": "company_career",
+      "name": "Газпром",
+      "url": "https://www.gazpromvacancy.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-12",
+      "type": "company_career",
+      "name": "МТС",
+      "url": "https://job.mts.ru/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-13",
+      "type": "company_career",
+      "name": "Т2",
+      "url": "https://careers.t2.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-14",
+      "type": "company_career",
+      "name": "Пятёрочка",
+      "url": "https://5ka.ru/career",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-15",
+      "type": "company_career",
+      "name": "Перекрёсток",
+      "url": "https://rabota.perekrestok.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-16",
+      "type": "company_career",
+      "name": "Магнит",
+      "url": "https://rabota.magnit.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-17",
+      "type": "company_career",
+      "name": "Магнит Тех",
+      "url": "https://magnit.tech/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-18",
+      "type": "company_career",
+      "name": "Додо Пицца",
+      "url": "https://rabotavdodo.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-19",
+      "type": "company_career",
+      "name": "Вкусно — и точка",
+      "url": "https://rabotaitochka.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-20",
+      "type": "company_career",
+      "name": "Burger King Россия",
+      "url": "https://burgerking-vacancy.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-21",
+      "type": "company_career",
+      "name": "Аптеки Апрель",
+      "url": "https://apteka-april.ru/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-22",
+      "type": "company_career",
+      "name": "Авиасейлс",
+      "url": "https://www.aviasales.ru/about/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-23",
+      "type": "company_career",
+      "name": "Точка Банк",
+      "url": "https://hr.tochka.com/vacancies/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-24",
+      "type": "company_career",
+      "name": "Рамблер",
+      "url": "https://www.rambler.ru/pro",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-25",
+      "type": "company_career",
+      "name": "Литрес",
+      "url": "https://www.litres.ru/company/vacancies/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-26",
+      "type": "company_career",
+      "name": "Аскона",
+      "url": "https://job.askona.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-27",
+      "type": "company_career",
+      "name": "Диван.ру",
+      "url": "https://www.divan.ru/site/careers",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-28",
+      "type": "company_career",
+      "name": "Лемана ПРО",
+      "url": "https://rabota.lemanapro.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-29",
+      "type": "company_career",
+      "name": "Hoff",
+      "url": "https://job.hoff.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-30",
+      "type": "company_career",
+      "name": "ВсеИнструменты.ру",
+      "url": "https://rabota.vseinstrumenti.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-31",
+      "type": "company_career",
+      "name": "Эксмо",
+      "url": "https://eksmo.ru/job/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-32",
+      "type": "company_career",
+      "name": "Лента",
+      "url": "https://lenta-jobs.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-33",
+      "type": "company_career",
+      "name": "ВкусВилл",
+      "url": "https://vkusvill.ru/job/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-34",
+      "type": "company_career",
+      "name": "Lamoda",
+      "url": "https://job.lamoda.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-35",
+      "type": "company_career",
+      "name": "Спортмастер",
+      "url": "https://job.sportmaster.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-36",
+      "type": "company_career",
+      "name": "Золотое Яблоко",
+      "url": "https://job.goldapple.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-37",
+      "type": "company_career",
+      "name": "2ГИС",
+      "url": "https://2gis-job.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-38",
+      "type": "company_career",
+      "name": "Ингосстрах",
+      "url": "https://www.ingos.ru/career",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-39",
+      "type": "company_career",
+      "name": "Skillbox",
+      "url": "https://skillbox.com/jobs",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-40",
+      "type": "company_career",
+      "name": "Лаборатория Касперского",
+      "url": "https://careers.kaspersky.ru/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-41",
+      "type": "company_career",
+      "name": "Алабуга",
+      "url": "https://career.alabuga.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-42",
+      "type": "company_career",
+      "name": "Циан",
+      "url": "https://www.cian.ru/vacancies/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-43",
+      "type": "company_career",
+      "name": "Контур",
+      "url": "https://kontur.ru/career/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-44",
+      "type": "company_career",
+      "name": "Skyeng",
+      "url": "https://vacancies.skyeng.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-45",
+      "type": "company_career",
+      "name": "Ростелеком",
+      "url": "https://job.rt.ru/search",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-46",
+      "type": "company_career",
+      "name": "Selectel",
+      "url": "https://selectel.ru/careers/all/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-47",
+      "type": "company_career",
+      "name": "Фоксфорд",
+      "url": "https://jobs.foxford.ru/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-48",
+      "type": "company_career",
+      "name": "Нетология",
+      "url": "https://netology.ru/job",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-49",
+      "type": "company_career",
+      "name": "МТС Банк",
+      "url": "https://job.mtsbank.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-50",
+      "type": "company_career",
+      "name": "Tilda Publishing",
+      "url": "https://tilda.cc/ru/vacancy/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-51",
+      "type": "company_career",
+      "name": "Профи.ру",
+      "url": "https://profi.ru/vacancies/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-52",
+      "type": "company_career",
+      "name": "Билайн",
+      "url": "https://job.beeline.ru/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-53",
+      "type": "company_career",
+      "name": "НСПК",
+      "url": "https://www.nspk.ru/vacancies",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-54",
+      "type": "company_career",
+      "name": "КРОК",
+      "url": "https://careers.croc.ru/vacancies/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-55",
+      "type": "company_career",
+      "name": "Группа Астра",
+      "url": "https://astra.ru/about/career/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-56",
+      "type": "company_career",
+      "name": "Ситидрайв",
+      "url": "https://citydrive.ru/vacancies/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-57",
+      "type": "company_career",
+      "name": "Банк России",
+      "url": "https://www.cbr.ru/about_br/career/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-58",
+      "type": "company_career",
+      "name": "МегаФон",
+      "url": "https://job.megafon.ru/",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-59",
+      "type": "company_career",
+      "name": "Яндекс Образование",
+      "url": "https://yandex.ru/jobs/vacancies?services=education",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "company-60",
+      "type": "company_career",
+      "name": "Яндекс Маркет",
+      "url": "https://yandex.ru/jobs/vacancies?services=market",
+      "status": "discovered_unverified",
+      "basis": "published company career link",
+      "access": "public_landing_only"
+    },
+    {
+      "id": "telegram-theyseeku",
+      "type": "telegram_channel",
+      "name": "@theyseeku",
+      "url": "https://t.me/theyseeku",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-polyaluzjob",
+      "type": "telegram_channel",
+      "name": "@polyaluzjob",
+      "url": "https://t.me/polyaluzjob",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-theblueprintcareer",
+      "type": "telegram_channel",
+      "name": "@theblueprintcareer",
+      "url": "https://t.me/theblueprintcareer",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-workasap",
+      "type": "telegram_channel",
+      "name": "@workasap",
+      "url": "https://t.me/workasap",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-perezvonyu",
+      "type": "telegram_channel",
+      "name": "@perezvonyu",
+      "url": "https://t.me/perezvonyu",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-digital_rabota",
+      "type": "telegram_channel",
+      "name": "@digital_rabota",
+      "url": "https://t.me/digital_rabota",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-normrabota",
+      "type": "telegram_channel",
+      "name": "@normrabota",
+      "url": "https://t.me/normrabota",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-jobpower",
+      "type": "telegram_channel",
+      "name": "@jobpower",
+      "url": "https://t.me/jobpower",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-zdemcv",
+      "type": "telegram_channel",
+      "name": "@zdemcv",
+      "url": "https://t.me/zdemcv",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-vdhl_good",
+      "type": "telegram_channel",
+      "name": "@vdhl_good",
+      "url": "https://t.me/vdhl_good",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-pardashian",
+      "type": "telegram_channel",
+      "name": "@pardashian",
+      "url": "https://t.me/pardashian",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-digital_jobster",
+      "type": "telegram_channel",
+      "name": "@digital_jobster",
+      "url": "https://t.me/digital_jobster",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-rabota_go",
+      "type": "telegram_channel",
+      "name": "@rabota_go",
+      "url": "https://t.me/rabota_go",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-marketing_rabota_jobs",
+      "type": "telegram_channel",
+      "name": "@marketing_rabota_jobs",
+      "url": "https://t.me/marketing_rabota_jobs",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-vacanciesrus",
+      "type": "telegram_channel",
+      "name": "@vacanciesrus",
+      "url": "https://t.me/vacanciesrus",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-budujobs",
+      "type": "telegram_channel",
+      "name": "@budujobs",
+      "url": "https://t.me/budujobs",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-cozy_hr",
+      "type": "telegram_channel",
+      "name": "@cozy_hr",
+      "url": "https://t.me/cozy_hr",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-mirkreatorovjob",
+      "type": "telegram_channel",
+      "name": "@mirkreatorovjob",
+      "url": "https://t.me/mirkreatorovjob",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-dddwork",
+      "type": "telegram_channel",
+      "name": "@dddwork",
+      "url": "https://t.me/dddwork",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-work_editor",
+      "type": "telegram_channel",
+      "name": "@work_editor",
+      "url": "https://t.me/work_editor",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-freelancechoice",
+      "type": "telegram_channel",
+      "name": "@freelancechoice",
+      "url": "https://t.me/freelancechoice",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-glvrd_job",
+      "type": "telegram_channel",
+      "name": "@glvrd_job",
+      "url": "https://t.me/glvrd_job",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-forallmedia",
+      "type": "telegram_channel",
+      "name": "@forallmedia",
+      "url": "https://t.me/forallmedia",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-textodromo",
+      "type": "telegram_channel",
+      "name": "@textodromo",
+      "url": "https://t.me/textodromo",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-self_ma",
+      "type": "telegram_channel",
+      "name": "@self_ma",
+      "url": "https://t.me/self_ma",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-copy_digital",
+      "type": "telegram_channel",
+      "name": "@Copy_Digital",
+      "url": "https://t.me/Copy_Digital",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-work4writers",
+      "type": "telegram_channel",
+      "name": "@Work4writers",
+      "url": "https://t.me/Work4writers",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-copywriter_vacancies",
+      "type": "telegram_channel",
+      "name": "@copywriter_vacancies",
+      "url": "https://t.me/copywriter_vacancies",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-journ_remote",
+      "type": "telegram_channel",
+      "name": "@journ_remote",
+      "url": "https://t.me/journ_remote",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-dnative_job",
+      "type": "telegram_channel",
+      "name": "@dnative_job",
+      "url": "https://t.me/dnative_job",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-jobforpr",
+      "type": "telegram_channel",
+      "name": "@jobforpr",
+      "url": "https://t.me/jobforpr",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-jobsforkm",
+      "type": "telegram_channel",
+      "name": "@JobsForKM",
+      "url": "https://t.me/JobsForKM",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-forproducer",
+      "type": "telegram_channel",
+      "name": "@forproducer",
+      "url": "https://t.me/forproducer",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-vacancysmm",
+      "type": "telegram_channel",
+      "name": "@vacancysmm",
+      "url": "https://t.me/vacancysmm",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-forallmarketing",
+      "type": "telegram_channel",
+      "name": "@forallmarketing",
+      "url": "https://t.me/forallmarketing",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-marketing_jobs",
+      "type": "telegram_channel",
+      "name": "@marketing_jobs",
+      "url": "https://t.me/marketing_jobs",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-seohr",
+      "type": "telegram_channel",
+      "name": "@seohr",
+      "url": "https://t.me/seohr",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-kopirayter_kopirayting",
+      "type": "telegram_channel",
+      "name": "@kopirayter_kopirayting",
+      "url": "https://t.me/kopirayter_kopirayting",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-copy_go",
+      "type": "telegram_channel",
+      "name": "@copy_go",
+      "url": "https://t.me/copy_go",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-freelansta",
+      "type": "telegram_channel",
+      "name": "@freelansta",
+      "url": "https://t.me/freelansta",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-normremote",
+      "type": "telegram_channel",
+      "name": "@NormRemote",
+      "url": "https://t.me/NormRemote",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-dnative_job100",
+      "type": "telegram_channel",
+      "name": "@dnative_job100",
+      "url": "https://t.me/dnative_job100",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-remote_ru",
+      "type": "telegram_channel",
+      "name": "@remote_ru",
+      "url": "https://t.me/remote_ru",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-over100",
+      "type": "telegram_channel",
+      "name": "@over100",
+      "url": "https://t.me/over100",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    },
+    {
+      "id": "telegram-digitaltender",
+      "type": "telegram_channel",
+      "name": "@digitaltender",
+      "url": "https://t.me/digitaltender",
+      "status": "permission_required",
+      "access": "no_scraping_or_republication_without_authorization"
+    }
+  ]
+}
