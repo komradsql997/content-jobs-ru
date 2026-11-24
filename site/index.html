@@ -1,13 +1,21 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Текст и дело — работа для тех, кто работает с контентом</title>
+<title>Главред нашёл вакансии — работа в контенте</title>
 <meta name="description" content="Вакансии российских компаний для редакторов, копирайтеров, UX-писателей и контент-маркетологов. Поиск, фильтры, оценка информативности.">
-<link rel="stylesheet" href="./styles.css"><script defer src="./app.js"></script></head>
-<body><header><div class="wrap head"><a href="./" class="logo"><span>т.</span> текст и дело</a><span class="pill">Бета · бесплатно</span></div></header>
-<main class="wrap"><section class="hero"><div class="overline"><span class="dot"></span> 11:00 · 16:00 · 21:00 МСК</div><h1>Хорошая работа<br><em>для тех, кто работает</em><br>с контентом<span class="green">.</span></h1><p>Редактура, UX-тексты, копирайтинг, контент-маркетинг. Только российские компании и работа в РФ.</p><div class="stats"><div><strong id="total">—</strong><small>вакансий</small></div><div><strong id="sources">—</strong><small>источников с вакансиями</small></div><div><strong>0 ₽</strong><small>за доступ</small></div></div></section>
+<link rel="icon" type="image/jpeg" href="./brand.jpg"><link rel="stylesheet" href="./styles.css"><script defer src="./app.js"></script></head>
+<body><header><div class="wrap head"><a href="./" class="logo"><img src="./brand.jpg" alt="" width="42" height="42"><span>Главред нашёл вакансии</span></a><span class="pill">Бета-версия</span></div></header>
+<main class="wrap"><section class="hero"><div class="overline updated-main" id="lastUpdated">Последнее обновление: загружаем данные…</div><p>Редактура, UX-тексты, копирайтинг, контент-маркетинг, SMM. Пока только российские компании и работа в РФ.</p><div class="stats"><div><strong id="total">—</strong><small>вакансий</small></div><div><strong id="sources">—</strong><small>источников с вакансиями</small></div></div></section>
 <section class="board"><div class="board-title"><div><span class="eyebrow">01 / Вакансии</span><h2>Найди своё место</h2></div><span class="updated" id="updated"></span></div>
-<div class="filters"><input id="query" type="search" placeholder="Профессия, компания, ключевое слово" aria-label="Поиск"><select id="category" aria-label="Специализация"><option value="">Все специализации</option></select><select id="salary" aria-label="Зарплата"><option value="">Любая зарплата</option><option value="yes">Указана</option></select><select id="sort" aria-label="Сортировка"><option value="fresh">Сначала новые</option><option value="score">По информативности</option></select></div>
+<div class="filters">
+<input id="query" type="search" placeholder="Профессия, компания, ключевое слово" aria-label="Поиск">
+<select id="category" aria-label="Специализация"><option value="">Все специализации</option><option>Редактура</option><option>UX-тексты</option><option>Копирайтинг</option><option>Контент-маркетинг</option><option>SMM</option><option>Технические тексты</option><option>Руководство</option></select>
+<select id="workFormat" aria-label="Формат работы"><option value="">Любой формат</option><option value="Удалённо">Удалённо</option><option value="Гибрид">Гибрид</option><option value="Офис">Офис</option></select>
+<select id="level" aria-label="Опыт работы"><option value="">Любой опыт</option><option value="intern">Стажёр</option><option value="junior">Junior</option><option value="middle">Middle</option><option value="senior">Senior</option><option value="lead">Lead</option></select>
+<select id="city" aria-label="Город"><option value="">Все города</option></select>
+<select id="salary" aria-label="Доход"><option value="">Любой доход</option><option value="yes">Зарплата указана</option><option value="estimate">Есть ориентир</option><option value="100000">От 100 000 ₽</option><option value="150000">От 150 000 ₽</option><option value="200000">От 200 000 ₽</option></select>
+<select id="sort" aria-label="Сортировка"><option value="fresh">Сначала новые</option><option value="score">По информативности</option></select>
+</div>
 <div class="results"><span id="count">Загружаем...</span><button id="clear">Сбросить фильтры</button></div><div id="jobs" class="jobs"></div><button id="more" class="more" hidden>Показать ещё</button></section>
-<section class="about"><div><span class="eyebrow">02 / О проекте</span><h2>Меньше шума.<br>Больше дела.</h2></div><div><p>Собираем предложения для специалистов по контенту с карьерных сайтов российских работодателей. В перспективе — профильные Telegram-каналы, подключённые с разрешения владельцев.</p><p>Оценка из 100 баллов означает <b>полноту описания вакансии</b>, а не качество работодателя: зарплата, задачи, требования, место работы, компания, ссылка на отклик. Отклик — только у первоисточника.</p><p>Проект в ранней бете: некоторые источники ещё не подключены, а количество вакансий зависит от фактически полученных данных. Последняя проверка указана над лентой.</p></div></section></main>
-<footer><div class="wrap foot"><b>текст и дело.</b><span>Работа в контенте · Россия · 2026</span></div></footer>
+</main>
+<footer><div class="wrap foot"><b>Главред нашёл вакансии</b><span>Работа в контенте · Россия · 2026</span></div></footer>
 <dialog id="details"><button id="close" aria-label="Закрыть" class="close">×</button><div id="detailsContent"></div></dialog></body></html>
