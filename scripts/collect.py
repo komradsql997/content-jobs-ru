@@ -198,7 +198,7 @@ def collect_company(source):
     for seed_url in source.get("seed_urls",[]):
         candidates[canonical(seed_url)]=(seed_url,"")
     priority=sorted(candidates.items(),key=lambda entry:(0 if entry[0] in [canonical(s) for s in source.get("seed_urls",[])] else 1, 0 if is_role(entry[1][0]+" "+entry[1][1]) else 1))
-    for url,(label,parent) in priority[:MAX_DETAILS]:
+    for url,(label,parent) in priority[:source.get("max_details", MAX_DETAILS)]:
         try:
             item=parse_detail(url,name,source.get("seed_locations",{}).get(url,""));stats["detail_checked"]+=1
             if item: found.append(item)
@@ -230,8 +230,24 @@ def merge_jobs(existing,incoming):
 
 def main():
     sources=json.loads(SOURCE_FILE.read_text(encoding="utf-8"))["companies"]
+    # Every corporate career page in the source catalog becomes a discovery target.
+    # Telegram entries require permission and are NEVER fetched as message streams.
+    registry=json.loads((ROOT / "source_catalog.json").read_text(encoding="utf-8"))["sources"]
+    have={canonical(x["url"]) for x in sources}
+    for item in registry:
+        if item["type"]!="company_career":
+            continue
+        url=canonical(item["url"])
+        if url in have:
+            continue
+        have.add(url)
+        sources.append({
+            "name":item["name"],"url":item["url"],
+            "path_regex":r"/(?:vacanc(?:y|ies)|career|jobs?|positions?|work|team)(?:/|$)",
+            "max_details":4
+        })
     status={};new=[]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
         for name,jobs,details in pool.map(collect_company,sources):
             status[name]=details;new+=jobs
             print(name,details["status"],"cards",details["candidate_links"],"checked",details["detail_checked"],"saved",details["saved"])

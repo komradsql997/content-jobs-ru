@@ -36,12 +36,16 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Собрать российские вакансии
         run: python scripts/collect.py
+      - name: Проверить каталог карьерных источников
+        run: python scripts/source_audit.py
       - name: Сохранить диагностический отчёт
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: source-diagnostics
-          path: reports/source_diagnostics.json
+          path: |
+            reports/source_diagnostics.json
+            reports/source_catalog_health.json
           retention-days: 7
           if-no-files-found: ignore
       - name: Зафиксировать обновлённые вакансии
