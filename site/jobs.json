@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T11:08:18Z",
+  "updated_at": "2026-11-24T11:09:32Z",
   "total": 0,
   "status": {
     "Яндекс": {
@@ -118,7 +118,7 @@
       "candidate_links": 0,
       "detail_checked": 0,
       "saved": 0,
-      "error": "<urlopen error timed out>"
+      "error": "Remote end closed connection without response"
     }
   },
   "jobs": []
