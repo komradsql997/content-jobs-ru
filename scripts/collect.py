@@ -159,11 +159,20 @@ def parse_detail(url,company):
         if result: return result
     heading=soup.select_one("h1")
     title=plain(heading.get_text(" ") if heading else "",180)
-    excerpt=plain((soup.select_one("main") or soup.body or soup).get_text(" "),2200)
-    if "yandex.ru/jobs/vacancies/" in url and ("49487" in url or "47744" in url):
-        print("SEED_DIAG",url,"h1=",repr(title),"first=",repr(excerpt[:450]),"RU=",bool(RU.search(excerpt)),"ARCH=",bool(re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна",excerpt[:800],re.I)))
-    if re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна",excerpt[:800],re.I): return None
-    return make_job(title,company,url,excerpt)
+    full_text=(soup.select_one("main") or soup.body or soup).get_text(" ",strip=True)
+    if re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна",full_text[:800],re.I):
+        return None
+    excerpt=plain(full_text,2200)
+    location=""
+    # Russian employment region can be stated in the benefits section after the main excerpt.
+    remote_ru=re.search(r"(?:из любого региона РФ|из любого региона России|удал[её]нн(?:ая|о) работа из РФ|удал[её]нн(?:ая|о) работа из России|работа из любого региона РФ)",full_text,re.I)
+    if remote_ru and re.search(r"удал[её]нн|remote",full_text[:500],re.I):
+        location="Удалённо из России"
+    else:
+        m=RU.search(full_text[:900])
+        if m: location=m.group(0)
+    return make_job(title,company,url,excerpt,location)
+
 
 def collect_company(source):
     name=source["name"]; rx=re.compile(source["path_regex"])
