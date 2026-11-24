@@ -1,0 +1,86 @@
+{
+  "notes": "Кандидаты на интеграцию: URL доступен не означает работающего парсера или право переиспользования. Статусы смотреть в отчёте Actions.",
+  "companies": [
+    {
+      "name": "Яндекс",
+      "url": "https://yandex.ru/jobs/vacancies",
+      "path_regex": "/jobs/vacancies/[^/?#]+",
+      "extra_urls": [
+        "https://yandex.ru/jobs/vacancies?services=education"
+      ]
+    },
+    {
+      "name": "Точка Банк",
+      "url": "https://hr.tochka.com/vacancies/",
+      "path_regex": "/vacancies/catalog/[^/?#]+"
+    },
+    {
+      "name": "Т-Банк",
+      "url": "https://www.tbank.ru/career/it/product-editors/",
+      "path_regex": "/career/(?:it|back-office|business|office)/vacancy/[^?#]+"
+    },
+    {
+      "name": "МТС",
+      "url": "https://job.mts.ru/vacancies",
+      "path_regex": "/vacancy/[0-9]+"
+    },
+    {
+      "name": "2ГИС",
+      "url": "https://job.2gis.ru/vacancies",
+      "path_regex": "/vacancies/[a-z_]+/[0-9]+"
+    },
+    {
+      "name": "Ozon",
+      "url": "https://career.ozon.ru/vacancy/",
+      "path_regex": "/vacancy/[^?#]+"
+    },
+    {
+      "name": "Контур",
+      "url": "https://kontur.ru/career/vacancies",
+      "path_regex": "/career/vacancies/[^?#]+"
+    },
+    {
+      "name": "Циан",
+      "url": "https://www.cian.ru/career/vacancies/",
+      "path_regex": "/career/vacancies/[^?#]+"
+    },
+    {
+      "name": "Skyeng",
+      "url": "https://vacancies.skyeng.ru/",
+      "path_regex": "/(?:vacancy|job|position)/[^?#]+"
+    },
+    {
+      "name": "Альфа-Банк",
+      "url": "https://job.alfabank.ru/",
+      "path_regex": "/(?:vacancy|vacancies|jobs?)/[^?#]+"
+    },
+    {
+      "name": "Ростелеком",
+      "url": "https://job.rt.ru/search",
+      "path_regex": "/(?:vacancy|vacancies|position|job)/[^?#]+"
+    },
+    {
+      "name": "Лаборатория Касперского",
+      "url": "https://careers.kaspersky.ru/vacancies",
+      "path_regex": "/vacancies/[^?#]+"
+    },
+    {
+      "name": "Lamoda",
+      "url": "https://job.lamoda.ru/vacancies",
+      "path_regex": "/(?:vacancy|vacancies|job)/[^?#]+"
+    },
+    {
+      "name": "ВкусВилл",
+      "url": "https://vkusvill.ru/job/office/",
+      "path_regex": "/job/(?:office|vacancys)/[^?#]+"
+    }
+  ],
+  "telegram_candidates": [
+    "work_editor",
+    "self_ma",
+    "textodromo",
+    "zdemcv",
+    "freelansta",
+    "tj_collega"
+  ]
+}

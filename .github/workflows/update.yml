@@ -1,0 +1,65 @@
+name: Обновить вакансии и сайт
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'site/jobs.json'
+  workflow_dispatch:
+  schedule:
+    # Москва UTC+3: 11:00, 16:00, 21:00
+    - cron: '0 8,13,18 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: content-jobs-release
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Установить зависимости
+        run: pip install -r requirements.txt
+      - name: Проверить логику
+        run: python -m unittest discover -s tests -v
+      - name: Собрать российские вакансии
+        run: python scripts/collect.py
+      - name: Сохранить диагностический отчёт
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-diagnostics
+          path: reports/source_diagnostics.json
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Зафиксировать обновлённые вакансии
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/jobs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh vacancies"
+            git push
+          fi
+      - name: Подготовить GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Загрузить сайт
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Опубликовать сайт
+        id: deployment
+        uses: actions/deploy-pages@v4
