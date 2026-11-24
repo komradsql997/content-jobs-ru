@@ -73,7 +73,7 @@ def apply_salary_estimates(jobs):
     groups={}
     for j in jobs:
         if not j.get("salary"): continue
-        nums=[int(x.replace(" ","")) for x in re.findall(r"\\d[\\d ]{3,}\\d",j["salary"])]
+        nums=[int(x.replace(" ","")) for x in re.findall(r"\d[\d ]{3,}\d",j["salary"])]
         nums=[n for n in nums if 30000<=n<=900000]
         if not nums:continue
         value=sum(nums[:2])/len(nums[:2])
@@ -123,6 +123,33 @@ def jobs_schema(soup):
         found.extend(walk(obj))
     return found
 
+def structured_salary(data):
+    """Return salary only from explicit JobPosting salary, never surrounding site promotions."""
+    if isinstance(data,dict):
+        currency=str(data.get("currency") or "").upper()
+        if currency and currency not in ("RUB","RUR"):
+            return ""
+        value=data.get("value",data)
+        if isinstance(value,dict):
+            low=value.get("minValue") or value.get("value")
+            high=value.get("maxValue")
+            try:
+                low=int(float(low))
+                high=int(float(high)) if high is not None else None
+            except (ValueError,TypeError):
+                return ""
+            if not (30000<=low<=900000):return ""
+            if high is not None and (high<low or high>900000):return ""
+            if high and high>low:return f"{low:,}–{high:,} ₽/мес".replace(","," ")
+            return f"от {low:,} ₽/мес".replace(","," ")
+        if isinstance(value,(int,float)) and 30000<=value<=900000:
+            return f"{int(value):,} ₽/мес".replace(","," ")
+        return ""
+    if isinstance(data,str):
+        m=re.search(r"(?<!\\d)(\\d[\\d ]{3,}\\d)\\s*(?:₽|руб)",data,re.I)
+        if m:return m.group(0)
+    return ""
+
 def structured_job(obj,base,company):
     title=plain(obj.get("title"),170)
     desc=plain(BeautifulSoup(str(obj.get("description","")), "html.parser").get_text(" "),2100)
@@ -130,7 +157,7 @@ def structured_job(obj,base,company):
     if isinstance(loc,dict): loc=[loc]
     location=" ".join(plain((x.get("address") or {}).get("addressLocality",""),100) for x in loc if isinstance(x,dict))
     if not location and obj.get("jobLocationType")=="TELECOMMUTE": location="Удалённо из России" if "Россия" in desc or "РФ" in desc else ""
-    salary=plain(obj.get("baseSalary",""),130)
+    salary=structured_salary(obj.get("baseSalary"))
     url=obj.get("url") or base
     return make_job(title, company, urljoin(base,str(url)), desc, location, salary)
 
@@ -143,9 +170,8 @@ def make_job(title,company,url,description="",location="",salary=""):
     if not location or (not RU.search(location) and location.lower() not in ("удалённо из россии","удаленно из россии")):
         return None
     if FOREIGN.search(location): return None
-    if not salary:
-        m=SALARY.search(description)
-        if m: salary=m.group(0)
+    # Never infer salary from the entire page: banner/mentor prices look like salaries.
+    salary=plain(salary,130) if isinstance(salary,str) else ""
     u=canonical(url)
     job={"title":title,"company":company,"url":u,"sources":[{"name":company,"url":u}],"description":description,"location":location,"salary":salary,"category":category(title),"seen_at":STAMP,"first_seen_at":STAMP,"level":infer_level(title),"work_format":infer_format(location,description),"city":infer_city(location),"salary_estimate":"","salary_estimate_basis":0}
     job["score"]=score(job)
@@ -162,6 +188,9 @@ def parse_detail(url,company,location_hint=""):
     full_text=(soup.select_one("main") or soup.body or soup).get_text(" ",strip=True)
     if re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна|показать закрытую вакансию",full_text[:1000],re.I):
         return None
+    if title and title in full_text:
+        # Some third-party career pages prepend unrelated site navigation and promotions.
+        full_text=full_text[full_text.find(title):]
     excerpt=plain(full_text,2200)
     location=""
     # Russian employment region can be stated in the benefits section after the main excerpt.
