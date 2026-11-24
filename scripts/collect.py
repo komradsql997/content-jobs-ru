@@ -185,6 +185,8 @@ def parse_detail(url,company,location_hint=""):
         if result: return result
     heading=soup.select_one("h1")
     title=plain(heading.get_text(" ") if heading else "",180)
+    # Third-party pages sometimes append a generic site label to the role name.
+    title=re.sub(r"\\s*[—–-]\\s*Вакансия в .*$","",title,flags=re.I)
     full_text=(soup.select_one("main") or soup.body or soup).get_text(" ",strip=True)
     if re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна|показать закрытую вакансию",full_text[:1000],re.I):
         return None
@@ -289,7 +291,10 @@ def main():
         except (ValueError,KeyError,TypeError): continue
         if age<MAX_AGE_DAYS:old.append(job)
     fresh_urls={j["url"] for j in new}
-    old=[j for j in old if j.get("url") not in fresh_urls]
+    # When a source was successfully checked, stale cached listings that disappeared
+    # must not remain as fresh offers. Keep only temporary failures for up to 7 days.
+    old=[j for j in old if j.get("url") not in fresh_urls and
+         status.get(j.get("company"),{}).get("status")=="FETCH_ERROR"]
     jobs=merge_jobs(new,old)
     apply_salary_estimates(jobs)
     jobs.sort(key=lambda x:x.get("first_seen_at",x.get("seen_at","")),reverse=True)
