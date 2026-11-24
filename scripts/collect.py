@@ -160,7 +160,7 @@ def parse_detail(url,company,location_hint=""):
     heading=soup.select_one("h1")
     title=plain(heading.get_text(" ") if heading else "",180)
     full_text=(soup.select_one("main") or soup.body or soup).get_text(" ",strip=True)
-    if re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна",full_text[:800],re.I):
+    if re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна|показать закрытую вакансию",full_text[:1000],re.I):
         return None
     excerpt=plain(full_text,2200)
     location=""
@@ -206,8 +206,10 @@ def collect_company(source):
             stats.setdefault("detail_errors",[]).append(str(e)[:130])
     unique={j["url"]:j for j in found}
     result=list(unique.values());stats["saved"]=len(result)
-    if stats["status"]!="FETCH_ERROR":
-        stats["status"]="FOUND" if result else ("NO_MATCHES_IN_CHECKED_PAGES" if stats["candidate_links"] or stats["listing_pages"] else "NO_LISTING_DATA")
+    if result:
+        stats["status"]="FOUND"
+    elif stats["status"]!="FETCH_ERROR":
+        stats["status"]="NO_MATCHES_IN_CHECKED_PAGES" if stats["candidate_links"] or stats["listing_pages"] else "NO_LISTING_DATA"
     return name,result,stats
 
 def merge_jobs(existing,incoming):
@@ -216,7 +218,7 @@ def merge_jobs(existing,incoming):
         matched=None
         for saved in all_jobs:
             same_link=job["url"]==saved["url"]
-            same_name=(job["company"].casefold()==saved["company"].casefold() and difflib.SequenceMatcher(None,job["title"].casefold(),saved["title"].casefold()).ratio()>=.96)
+            same_name=(job["company"].casefold()==saved["company"].casefold() and difflib.SequenceMatcher(None,job["title"].casefold(),saved["title"].casefold()).ratio()>=.96 and difflib.SequenceMatcher(None,job.get("description","")[:900].casefold(),saved.get("description","")[:900].casefold()).ratio()>=.75)
             if same_link or same_name:matched=saved;break
         if matched:
             links={s["url"]:s for s in matched.get("sources",[])+job.get("sources",[])}

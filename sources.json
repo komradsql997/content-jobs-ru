@@ -21,7 +21,23 @@
     {
       "name": "Точка Банк",
       "url": "https://hr.tochka.com/vacancies/",
-      "path_regex": "/vacancies/catalog/[^/?#]+"
+      "path_regex": "/vacancies/catalog/[^/?#]+",
+      "seed_urls": [
+        "https://h.careers/job/42f693c9-6084-499b-a541-30c9742c3f7c",
+        "https://h.careers/job/a3279470-330b-444e-adcf-f6523faaab1d",
+        "https://h.careers/job/56635329-80fd-44e3-b26c-ddd64613db71",
+        "https://h.careers/job/5c1e99ad-9a2f-4471-9ec3-a5a40cdf887a",
+        "https://h.careers/job/b3fc4c2a-2e9f-4b2c-a977-05436cf2e8bf",
+        "https://h.careers/job/79ba85c1-78e2-4385-8a32-b575a03872b8"
+      ],
+      "seed_locations": {
+        "https://h.careers/job/42f693c9-6084-499b-a541-30c9742c3f7c": "Удалённо из России",
+        "https://h.careers/job/a3279470-330b-444e-adcf-f6523faaab1d": "Удалённо из России",
+        "https://h.careers/job/56635329-80fd-44e3-b26c-ddd64613db71": "Удалённо из России",
+        "https://h.careers/job/5c1e99ad-9a2f-4471-9ec3-a5a40cdf887a": "Удалённо из России",
+        "https://h.careers/job/b3fc4c2a-2e9f-4b2c-a977-05436cf2e8bf": "Удалённо из России",
+        "https://h.careers/job/79ba85c1-78e2-4385-8a32-b575a03872b8": "Удалённо из России"
+      }
     },
     {
       "name": "Т-Банк",
@@ -82,6 +98,22 @@
       "name": "ВкусВилл",
       "url": "https://vkusvill.ru/job/office/",
       "path_regex": "/job/(?:office|vacancys)/[^?#]+"
+    },
+    {
+      "name": "Фоксфорд",
+      "url": "https://jobs.foxford.ru/vacancies",
+      "path_regex": "/vacancies/[^/?#]+",
+      "seed_urls": [
+        "https://jobs.foxford.ru/vacancies/junior-ux-editor",
+        "https://jobs.foxford.ru/vacancies/ux",
+        "https://jobs.foxford.ru/vacancies/ux-redaktor-v-komandu-repetitory",
+        "https://jobs.foxford.ru/vacancies/kontent-menedzher",
+        "https://jobs.foxford.ru/vacancies/vypuskayuschiy-redaktor"
+      ],
+      "seed_locations": {
+        "https://jobs.foxford.ru/vacancies/junior-ux-editor": "Удалённо из России"
+      },
+      "max_details": 18
     }
   ],
   "telegram_candidates": [
