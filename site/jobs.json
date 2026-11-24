@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-24T11:09:32Z",
+  "updated_at": "2026-11-24T12:11:48Z",
   "total": 0,
   "status": {
     "Яндекс": {
       "status": "NO_MATCHES_IN_CHECKED_PAGES",
-      "listing_pages": 2,
-      "links": 207,
-      "candidate_links": 30,
-      "detail_checked": 16,
+      "listing_pages": 4,
+      "links": 427,
+      "candidate_links": 61,
+      "detail_checked": 24,
       "saved": 0
     },
     "Точка Банк": {
