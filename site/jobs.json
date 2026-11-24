@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T12:16:51Z",
+  "updated_at": "2026-11-24T12:19:06Z",
   "total": 1,
   "status": {
     "Яндекс": {
@@ -112,12 +112,13 @@
       "saved": 0
     },
     "ВкусВилл": {
-      "status": "NO_MATCHES_IN_CHECKED_PAGES",
-      "listing_pages": 1,
-      "links": 10,
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
       "candidate_links": 0,
       "detail_checked": 0,
-      "saved": 0
+      "saved": 0,
+      "error": "Remote end closed connection without response"
     }
   },
   "jobs": [
@@ -135,8 +136,8 @@
       "location": "Удалённо из России",
       "salary": "",
       "category": "Руководство",
-      "seen_at": "2026-11-24T12:16:51Z",
-      "first_seen_at": "2026-11-24T12:16:51Z",
+      "seen_at": "2026-11-24T12:19:06Z",
+      "first_seen_at": "2026-11-24T12:19:06Z",
       "level": "lead",
       "work_format": "Удалённо",
       "city": "Удалённо",
