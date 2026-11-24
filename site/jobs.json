@@ -1,1 +1,125 @@
-{"updated_at":null,"total":0,"status":{},"jobs":[]}
+{
+  "updated_at": "2026-11-24T09:51:50Z",
+  "total": 0,
+  "status": {
+    "Яндекс": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 2,
+      "links": 205,
+      "candidate_links": 30,
+      "detail_checked": 16,
+      "saved": 0
+    },
+    "Точка Банк": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "Т-Банк": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "МТС": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 57,
+      "candidate_links": 10,
+      "detail_checked": 10,
+      "saved": 0
+    },
+    "2ГИС": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 18,
+      "candidate_links": 15,
+      "detail_checked": 15,
+      "saved": 0
+    },
+    "Ozon": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
+    },
+    "Контур": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Циан": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Skyeng": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 6,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Альфа-Банк": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "Ростелеком": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 5,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Лаборатория Касперского": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 59,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Lamoda": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 32,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "ВкусВилл": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "The read operation timed out"
+    }
+  },
+  "jobs": []
+}
