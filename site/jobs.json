@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-24T09:51:50Z",
+  "updated_at": "2026-11-24T11:08:18Z",
   "total": 0,
   "status": {
     "Яндекс": {
       "status": "NO_MATCHES_IN_CHECKED_PAGES",
       "listing_pages": 2,
-      "links": 205,
+      "links": 207,
       "candidate_links": 30,
       "detail_checked": 16,
       "saved": 0
@@ -118,7 +118,7 @@
       "candidate_links": 0,
       "detail_checked": 0,
       "saved": 0,
-      "error": "The read operation timed out"
+      "error": "<urlopen error timed out>"
     }
   },
   "jobs": []
