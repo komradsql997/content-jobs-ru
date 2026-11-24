@@ -8,7 +8,8 @@
     "telegram_sources": 45,
     "verified_ingestors": [
       "Яндекс"
-    ]
+    ],
+    "budget_policy": "Zero recurring costs, no paid channel data providers, no admin demands"
   },
   "sources": [
     {
