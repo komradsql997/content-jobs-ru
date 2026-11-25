@@ -23,7 +23,8 @@
     "score": 100,
     "id": "telegram-workasap-5638",
     "channel": "workasap",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер в Yves Rocher",
@@ -49,7 +50,8 @@
     "score": 75,
     "id": "telegram-workasap-5653",
     "channel": "workasap",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер в Авто В Руки",
@@ -75,7 +77,8 @@
     "score": 75,
     "id": "telegram-perezvonyu-9386",
     "channel": "perezvonyu",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-специалист в АНО Институт развития образовательных, платформенных и цифровых решений",
@@ -101,33 +104,8 @@
     "score": 75,
     "id": "telegram-perezvonyu-9392",
     "channel": "perezvonyu",
-    "source_kind": "telegram_public"
-  },
-  {
-    "title": "Юлия — продуктовый и UX-редактор, копирайтер",
-    "company": "Компания не указана",
-    "url": "https://t.me/vdhl_good/34035",
-    "sources": [
-      {
-        "name": "Telegram · @vdhl_good",
-        "url": "https://t.me/vdhl_good/34035"
-      }
-    ],
-    "description": "Оставь своё РЕЗЮМЕ в нашей базе t.me/vdhl_resume . Там уже больше 6600 креативных профессионалов. Каждое резюме просматривают в среднем 500 раз. А сейчас экспресс-знакомство с новенькими. Они просто огонь: Наталья — упаковка проектов и сопровождение стартапов. Помогает объяснить сложный продукт простым языком и собрать материалы для инвесторов, клиентов и партнёров. Что может взять на себя: презентации и питч-деки. Продумывает структуру, пишет текст и оформляет слайды для инвесторов, акселераторов, грантовых заявок и продаж. Развитие бизнеса. Исследует рынки и конкурентов, ищет клиентов и партнёров, готовит материалы для выхода на новые рынки. Ведет переписку и переговоры на английском. Около восьми лет жила и работала за рубежом — в Сингапуре, Швейцарии и ОАЭ. По образованию экономист. Ольга — маркетолог. Опыт: более 7 лет опыта в маркетинге, PR и управлении проектами. Работала с рынками России, СНГ, Мексики и Бразилии: запускала маркетинговые кампании, развивала digital-направления, выстраивала коммуникации с партнёрами и адаптировала продвижение под локальную специфику. Есть опыт управления командами до 15 человек, включая международную команду из 9 специалистов. Работала на стыке маркетинга, PR, digital и бизнеса — от разработки стратегии до реализации проектов и оценки результатов. Юлия — продуктовый и UX-редактор, копирайтер. С текстами работает 16 лет, последние четыре года в IT: сотрудничала со Skill. Какие задачи решает: проектирует пользовательские флоу на сайтах и в мобильных приложениях, пишет интерфейсные тексты, создает рассылки, цепочки писем и триггерные письма, промпты для ИИ-помощников, чат-ботов. Знает и соблюдает принципы инфостиля, но не следует им слепо — применяет с умом и по ситуации. Работала с Qwen, DeepSeek, ChatGPT, Perplexity, Gemini и Claude на реальных редакторских задачах. Хочешь также попасть в подборку? Отправляйте своё резюме админис",
-    "location": "России",
-    "salary": "",
-    "category": "UX-тексты",
-    "seen_at": "2026-11-20T09:15:55Z",
-    "first_seen_at": "2026-11-20T09:15:55Z",
-    "level": "middle",
-    "work_format": "",
-    "city": "России",
-    "salary_estimate": "",
-    "salary_estimate_basis": 0,
-    "score": 75,
-    "id": "telegram-vdhl_good-34035",
-    "channel": "vdhl_good",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "НОВОСТНИК в Т-⁠Инвестиции",
@@ -153,33 +131,8 @@
     "score": 55,
     "id": "telegram-vdhl_good-34039",
     "channel": "vdhl_good",
-    "source_kind": "telegram_public"
-  },
-  {
-    "title": "Участвовать в разработке и реализации контент-стратегии: предлагать форматы, тестировать гипотезы, анализировать эффективность",
-    "company": "Компания не указана",
-    "url": "https://t.me/vdhl_good/34041",
-    "sources": [
-      {
-        "name": "Telegram · @vdhl_good",
-        "url": "https://t.me/vdhl_good/34041"
-      }
-    ],
-    "description": "Книжный магазин \"Подписные издания\" ищет ВИДЕОГРАФА, который может превратить идею в готовый ролик за минимальное время (г. Санкт-Петербург) Присылайте нам почту письмо с темой «Видеограф». Приложите к письму резюме, рассказ о себе и следующую информацию: 2–3 ссылки на ваши видео + короткое пояснение к каждому (где была ваша идея, а где работа по ТЗ). Идеально, если ролики будут под разные задачи: атмосферное видео, сюжетный ролик (история), ролик под продажу конкретного товара (с понятным призывом к действию). Короткий рассказ (3–5 предложений): какой из ваших роликов считаете самым удачным и почему; был ли опыт самостоятельных идей; сколько времени обычно уходит на монтаж короткого ролика. Идея одного ролика для пиара книги «Под маской, или сила женщины» Луизы Мэй Олкотт (2–3 предложения + референс: ссылка на похожий ролик или описание визуального стиля/приёма). Обязанности: Снимать и монтировать видео для наших соцсетей Создавать видео по брифам нашей команды Оперативно подхватывать тренды и адаптировать их под tone of voice и цели бренда Создавать ситуативный контент: быстрые реакции, сторис-форматы, короткие ролики под актуальные поводы Участвовать в разработке и реализации контент-стратегии: предлагать форматы, тестировать гипотезы, анализировать эффективность Находить интересные визуальные решения Согласовывать идеи и материалы с руководителем контент-направления, быстро вносить правки, передавать готовые ролики для публикации Условия: Гибридный формат работы Свободный график Крутая команда подельников Скидка на книги и булки Заработная плата обсуждается на собеседовании исходя из опыта кандидата. Требования: Опыт мобильной съёмки и монтажа «под ключ»: от идеи до публикации Уверенное владение приложениями для монтажа: Adobe Premiere Rush, InShot, CapCut или аналогичными Умение продумывать визуальный контент, чувство стиля и понимание tone of voice Организованно",
-    "location": "Санкт-Петербург",
-    "salary": "",
-    "category": "Редактура",
-    "seen_at": "2026-11-23T14:03:34Z",
-    "first_seen_at": "2026-11-23T14:03:34Z",
-    "level": "middle",
-    "work_format": "",
-    "city": "Санкт-Петербург",
-    "salary_estimate": "",
-    "salary_estimate_basis": 0,
-    "score": 75,
-    "id": "telegram-vdhl_good-34041",
-    "channel": "vdhl_good",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "опытного РЕДАКТОРА в группу детской научно-познавательной литературы",
@@ -205,7 +158,8 @@
     "score": 75,
     "id": "telegram-vdhl_good-34047",
     "channel": "vdhl_good",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер в бренд Goostaw Bergen",
@@ -231,33 +185,8 @@
     "score": 75,
     "id": "telegram-digital_jobster-6663",
     "channel": "digital_jobster",
-    "source_kind": "telegram_public"
-  },
-  {
-    "title": "Контент-менеджер / Видеооператор / Специалист поддержки",
-    "company": "Компания не указана",
-    "url": "https://t.me/digital_jobster/6664",
-    "sources": [
-      {
-        "name": "Telegram · @digital_jobster",
-        "url": "https://t.me/digital_jobster/6664"
-      }
-    ],
-    "description": "Резюме: Контент-менеджер / Видеооператор / Специалист поддержки 👨‍💻 Мирошниченко Максим Ник tg: @catallofcats Телефон: +7 - 924 - 189-79-37 Email: bioshok997@mail.ru https://www.instagram.com/oper.tattoo Возраст: 28 Формат/Локация : Санкт-Петербург - Гибрид; Удаленка Привет! Я из последних потоков трудолюбивых миллениалов. В поиске интересной работы, готовый обучится всему новому, сложному и интересному и внести в ваш бизнес большой вклад. ▪️ Желаемая сфера работы: Готов работать в любой сфере, имею большое количество полезных навыков ▪️ Сильные стороны: Очень критичен к своей работе, поэтому довожу все до идеала. Очень быстро учусь и очень смешно шучу. ▪️ Ссылка на кейсы и портфолио: по запросу ▪️ Опыт работы и яркие достижения: У меня большой и яркий опыт работы. В данный момент я работаю в службе поддержки Профи.ру. Также я снимаю на профессиональную камеру татуировщков и монтирую их работы. Имею большой опыт в продажах, становился лучшим продавцом 2 раза подряд в футуристическом бренде KRAKATAU . Именю большой опыт в CRM (Bitrix, Helpdesk, внутренние CRM) системах. Немного разбираюсь в SEO (метрика, топвизор) Много разбираюсь в CapCut. ▪️ Что важно в работе/компании: Хотелось бы интересную удаленную работу по самозанятости или ГПХ. Готов учится всему новому. ▪️ Финансовые ожидания: 70 000 - 90 000 📎 Полное резюме и вопросы напрямую у специалиста # контент # smm #аккаунтменеджер #резюме",
-    "location": "Санкт-Петербург",
-    "salary": "",
-    "category": "Редактура",
-    "seen_at": "2026-11-23T09:58:59Z",
-    "first_seen_at": "2026-11-23T09:58:59Z",
-    "level": "middle",
-    "work_format": "Удалённо",
-    "city": "Санкт-Петербург",
-    "salary_estimate": "",
-    "salary_estimate_basis": 0,
-    "score": 55,
-    "id": "telegram-digital_jobster-6664",
-    "channel": "digital_jobster",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Контент-менеджер / SMM (Junior-Middle) в компанию ПельменХаус",
@@ -283,7 +212,8 @@
     "score": 100,
     "id": "telegram-rabota_go-5040",
     "channel": "rabota_go",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер в агентство",
@@ -309,7 +239,8 @@
     "score": 100,
     "id": "telegram-rabota_go-5048",
     "channel": "rabota_go",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Новостной редактор",
@@ -335,33 +266,8 @@
     "score": 75,
     "id": "telegram-marketing_rabota_jobs-838",
     "channel": "marketing_rabota_jobs",
-    "source_kind": "telegram_public"
-  },
-  {
-    "title": "Разрабатывать контент-стратегию для внешних коммуникаций (статьи, вебинары, кейсы, исследования)",
-    "company": "Компания не указана",
-    "url": "https://t.me/marketing_rabota_jobs/840",
-    "sources": [
-      {
-        "name": "Telegram · @marketing_rabota_jobs",
-        "url": "https://t.me/marketing_rabota_jobs/840"
-      }
-    ],
-    "description": "Middle Product Marketing Manager (Продуктовый маркетолог) Москва, гибрид Сейчас мы в поисках Продуктового маркетолога на продукт edna Prisma. edna Prisma – комплексное решение для крупного бизнеса, которое помогает компаниям быстро и безопасно общаться с миллионами своих клиентов через SMS, мессенджеры и push-уведомления. Гарантирует высокую доставляемость сообщений и бесперебойную работу. При этом помогает компаниям сокращать расходы на рассылки за счёт современных технологий edna. Основные задачи: - Разрабатывать и защищать ценностное предложение (УТП) для каждого целевого сегмента (банки, ритейл, телеком, финтех); - Проводить глубинные исследования рынка и конкурентов (TAM/SAM/SOM, анализ трендов, бенчмаркинг); - Формировать долгосрочную маркетинговую стратегию продукта на горизонте 1–3 лет с измеримыми целями (узнаваемость, доля рынка, лидогенерация); - Создавать продающие артефакты, которые помогают закрывать крупные сделки: сейлз-питчи, коммерческие презентации, сравнительные таблицы с конкурентами, case-study с реальными цифрами ROI; - Управлять продуктовой упаковкой (месседжи, ключевые слоганы, демо-скрипты) и обеспечивать её единообразие во всех каналах; - Разрабатывать контент-стратегию для внешних коммуникаций (статьи, вебинары, кейсы, исследования); - Встроить продуктовый маркетинг в кросс-функциональные процессы: ты будешь работать в связке с 3 продакт-менеджерами и 3 бизнес-партнерами , которые отвечают за свои направления и выручку; - Выступать «мостиком» между продуктом, продажами и маркетингом. Мы ищем человека, который: - Опыт работы от 3 лет в роли продуктового маркетолога в B2B-компаниях (IT, MarTech, Telecom, SaaS); - Доказанные кейсы создания позиционирования для сложных технологических продуктов с длинным циклом сделки; - Владение инструментами: CustDev, глубокие интервью, конкурентный анализ, сегментация ЦА, ABM, бренд-маркетинг. - Умение форму",
-    "location": "Москва",
-    "salary": "",
-    "category": "Редактура",
-    "seen_at": "2026-11-17T07:03:01Z",
-    "first_seen_at": "2026-11-17T07:03:01Z",
-    "level": "middle",
-    "work_format": "Гибрид",
-    "city": "Москва",
-    "salary_estimate": "",
-    "salary_estimate_basis": 0,
-    "score": 75,
-    "id": "telegram-marketing_rabota_jobs-840",
-    "channel": "marketing_rabota_jobs",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Middle+ SMM-менеджер",
@@ -387,7 +293,8 @@
     "score": 75,
     "id": "telegram-marketing_rabota_jobs-847",
     "channel": "marketing_rabota_jobs",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Новостной редактор в МегаФон",
@@ -413,59 +320,8 @@
     "score": 80,
     "id": "telegram-budujobs-12361",
     "channel": "budujobs",
-    "source_kind": "telegram_public"
-  },
-  {
-    "title": "Junior Digital-копирайтер (CRM/SEO/Retention) в PROFILAKTIKA agency",
-    "company": "Компания не указана",
-    "url": "https://t.me/budujobs/12371",
-    "sources": [
-      {
-        "name": "Telegram · @budujobs",
-        "url": "https://t.me/budujobs/12371"
-      }
-    ],
-    "description": "Подборка вакансий от БУДУ 😉 🩷 Младший продуктовый маркетолог в Фонд МИК Опыт: не важен Зарплата: обсуждается на собеседовании 😕 Москва 🩷 Ведущий/UGC-креатор видео в медиа ИСКРА! Опыт: от 1 месяца до 1 года Зарплата: обсуждается на собеседовании 😕 Удалёнка 🩷 Junior Digital-копирайтер (CRM/SEO/Retention) в PROFILAKTIKA agency Опыт: 1-3 года Зарплата: обсуждается на собеседовании 😕 Удалёнка или офис в Воронеже 🩷 Видеооператор-монтажёр/Видеограф в FIRST-CAR.RU Опыт: 1-3 года Зарплата: обсуждается на собеседовании 😕 Москва Разместить свою вакансию можно здесь 🤬 #буду_работать",
-    "location": "Москва",
-    "salary": "",
-    "category": "Копирайтинг",
-    "seen_at": "2026-11-23T14:08:48Z",
-    "first_seen_at": "2026-11-23T14:08:48Z",
-    "level": "junior",
-    "work_format": "Удалённо",
-    "city": "Москва",
-    "salary_estimate": "",
-    "salary_estimate_basis": 0,
-    "score": 55,
-    "id": "telegram-budujobs-12371",
-    "channel": "budujobs",
-    "source_kind": "telegram_public"
-  },
-  {
-    "title": "разрабатывать позиционирование и контент-стратегии для Instagram-аккаунтов",
-    "company": "Компания не указана",
-    "url": "https://t.me/mirkreatorovjob/1676",
-    "sources": [
-      {
-        "name": "Telegram · @mirkreatorovjob",
-        "url": "https://t.me/mirkreatorovjob/1676"
-      }
-    ],
-    "description": "Рилс-продюсер в Команду Васильева Удалённая работа, съёмки в Москве, З/П обсуждается индивидуально Команда Васильева — контент-агентство. Мы ищем рилс-продюсера, который умеет создавать контент, привлекающий внимание, формирующий доверие и приносящий реальные результаты. Что нужно делать: — разрабатывать позиционирование и контент-стратегии для Instagram-аккаунтов; — придумывать креативные концепции и писать сценарии для Reels; — организовывать и проводить съёмки: в студии или совместно с видеографом; — работать с монтажом: ставить задачи нашим или собственным монтажёрам, контролировать результат; — анализировать эффективность контента, находить точки роста и предлагать новые решения; — подбирать референсы и следить за трендами, адаптируя их под задачи клиентов; — взаимодействовать со старшим продюсером, проджект-менеджером и клиентским сервисом; — общаться с клиентами по вопросам продюсирования контента. Какие требования: — реальный опыт создания контента, умение не только придумывать идеи, но и доводить их до результата; — успешный опыт органического продвижения в Instagram; — реализованные кейсы с миллионными охватами в нише; — опыт создания и ведения аккаунтов от 10 000 до 100 000+ подписчиков; — опыт работы с форматом «говорящая голова» и другими форматами видеоконтента; — кейсы в сложных нишах: бизнес, строительство, недвижимость, финансы и другие экспертные направления; — понимание полного цикла производства контента: от идеи до аналитики; — умение самостоятельно организовать свою работу и взаимодействовать с командой; — опыт работы не связан преимущественно с ногтевыми студиями, стоматологиями, ресторанами, инфобизнесом и подобными нишами. * принадлежит компании Meta, запрещена на территории РФ Откликнуться : тг @texasdreamer #продюсер #middle #командавасильева @mirkreatorovjob",
-    "location": "Москве",
-    "salary": "",
-    "category": "Редактура",
-    "seen_at": "2026-11-16T09:26:44Z",
-    "first_seen_at": "2026-11-16T09:26:44Z",
-    "level": "middle",
-    "work_format": "Удалённо",
-    "city": "Москве",
-    "salary_estimate": "",
-    "salary_estimate_basis": 0,
-    "score": 75,
-    "id": "telegram-mirkreatorovjob-1676",
-    "channel": "mirkreatorovjob",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор базы знаний в МТС",
@@ -491,7 +347,8 @@
     "score": 75,
     "id": "telegram-mirkreatorovjob-1678",
     "channel": "mirkreatorovjob",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Старший редактор в Yadro",
@@ -517,7 +374,8 @@
     "score": 75,
     "id": "telegram-mirkreatorovjob-1694",
     "channel": "mirkreatorovjob",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Новостной редактор",
@@ -543,7 +401,8 @@
     "score": 100,
     "id": "telegram-dddwork-5296",
     "channel": "dddwork",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-специалист / контент-продюсер",
@@ -569,7 +428,8 @@
     "score": 75,
     "id": "telegram-dddwork-5297",
     "channel": "dddwork",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор социальных сетей",
@@ -595,7 +455,8 @@
     "score": 75,
     "id": "telegram-dddwork-5300",
     "channel": "dddwork",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор сайта и социальных сетей",
@@ -621,7 +482,8 @@
     "score": 100,
     "id": "telegram-work_editor-6796",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Технический писатель",
@@ -647,7 +509,8 @@
     "score": 100,
     "id": "telegram-work_editor-6799",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Научный и литературный редактор семейных книг",
@@ -673,7 +536,8 @@
     "score": 100,
     "id": "telegram-work_editor-6802",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Главный редактор квизов (Squiz)",
@@ -699,7 +563,8 @@
     "score": 80,
     "id": "telegram-work_editor-6803",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор по математике Издательства",
@@ -725,7 +590,8 @@
     "score": 100,
     "id": "telegram-work_editor-6805",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор медиапроектов",
@@ -751,7 +617,8 @@
     "score": 80,
     "id": "telegram-work_editor-6806",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Seo-копирайтер",
@@ -777,7 +644,8 @@
     "score": 75,
     "id": "telegram-work_editor-6812",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор бизнес-процессов",
@@ -803,7 +671,8 @@
     "score": 100,
     "id": "telegram-work_editor-6813",
     "channel": "work_editor",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Креативный копирайтер",
@@ -829,7 +698,8 @@
     "score": 35,
     "id": "telegram-forallmedia-4347",
     "channel": "forallmedia",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор-новостник",
@@ -855,33 +725,8 @@
     "score": 35,
     "id": "telegram-forallmedia-4355",
     "channel": "forallmedia",
-    "source_kind": "telegram_public"
-  },
-  {
-    "title": "В петербургский ювелирный бренд BOHOANN ищут smm-специалиста",
-    "company": "Компания не указана",
-    "url": "https://t.me/textodromo/17449",
-    "sources": [
-      {
-        "name": "Telegram · @textodromo",
-        "url": "https://t.me/textodromo/17449"
-      }
-    ],
-    "description": "💬 Дайджест выходного дня 💬 Шанхай, BAUMA 24-25 ноября нужен переводчик на выставку (можно после 12:00) Тема: спецтехника Резюме и ставки присылайте в лс 🙏 @wronsav 🐶 🐶 🐶 🐶 🐶 На вторник в Москве нужен синхронист с китайским языком. Тема: производство солнечных батарей и строительство солнечных электростанций. Жду ваших предложений. Kuznetsov@kgtc.ru Евгений 🐶 🐶 🐶 🐶 🐶 В петербургский ювелирный бренд BOHOANN ищут smm-специалиста Задачи: — Снимать на телефон — Делать простой монтаж видео — Оформлять сторис с фирменным шрифтом — Вести 3 соцсети: Instagram, Threads, Telegram Ориентиры в цифрах: • 5 рилсов-распаковок в неделю • 6 дней сторис • 2–3 публикации в Telegram в неделю Важный нюанс — снимать нужно украшения на себе, поэтому смотрим на руки. Откликнуться и рассказать о себе можно Насте: @greenmyfavorite 🐶 🐶 🐶 🐶 🐶 SMM-специалист в бренд мягкой мебели «средний+» Что нужно: • вести Instagram; • публикации по контент-плану; • согласовывать стратегию и креативы с руководителем на старте, затем — самостоятельная работа и отчётность. Что важно: • опыт от 3 месяцев в товарных категориях сегментов «средний» и «средний+»; • кейсы со ссылками и результатами; • навыки работы с ИИ; • понимание алгоритмов Instagram. Условия: • полностью удалённо из любой локации с возможностью расчётов с РФ; • выплаты каждые две недели. 📩 irina.kalibrum@yandex.ru 🐶 🐶 🐶 🐶 Выставка CHTF в Шэньчжэнь 26-28 ноября. Нужен местный русский переводчик со знанием английского. Резюме и ставку прошу направить в ЛС. ТГ @dworkkit 🐶 🐶 🐶 🐶 🐶 Ищу сценариста коротких разговорных видео в проект авторских путеш ествий для долгосрочног о сотрудничества! Ищу сотрудника. Агентства прошу не писать, сотрудничать не буду ни в каком формате. Задачи: поиск идей и написание сценариев для Reels. Обязательные компетен ции: • Навыки копирайтинга; • Понимание цел евой аудитории, её болей и способов их закрытия; • Умение писать це",
-    "location": "Москве",
-    "salary": "",
-    "category": "SMM",
-    "seen_at": "2026-11-22T09:00:01Z",
-    "first_seen_at": "2026-11-22T09:00:01Z",
-    "level": "middle",
-    "work_format": "",
-    "city": "Москве",
-    "salary_estimate": "",
-    "salary_estimate_basis": 0,
-    "score": 75,
-    "id": "telegram-textodromo-17449",
-    "channel": "textodromo",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Контент-менеджер/мейкер | Москва, условия по оплате в лс",
@@ -907,7 +752,8 @@
     "score": 75,
     "id": "telegram-textodromo-17452",
     "channel": "textodromo",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор-сборщик контента в lifestyle-приложение (досуг и знакомства)",
@@ -933,7 +779,8 @@
     "score": 75,
     "id": "telegram-self_ma-5554",
     "channel": "self_ma",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "редактора",
@@ -959,7 +806,8 @@
     "score": 75,
     "id": "telegram-copywriter_vacancies-4371",
     "channel": "copywriter_vacancies",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "редактора для ведущего отраслевого Telegram-канала о строительстве и недвижимости «Всё о стройке",
@@ -985,7 +833,8 @@
     "score": 75,
     "id": "telegram-copywriter_vacancies-4373",
     "channel": "copywriter_vacancies",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "редактора-новостника",
@@ -1011,7 +860,8 @@
     "score": 75,
     "id": "telegram-copywriter_vacancies-4376",
     "channel": "copywriter_vacancies",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Копирайтер в проект о недвижимости",
@@ -1037,7 +887,8 @@
     "score": 75,
     "id": "telegram-copywriter_vacancies-4377",
     "channel": "copywriter_vacancies",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "опытного редактора",
@@ -1063,7 +914,8 @@
     "score": 75,
     "id": "telegram-copywriter_vacancies-4380",
     "channel": "copywriter_vacancies",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "контент-редактора",
@@ -1089,7 +941,8 @@
     "score": 75,
     "id": "telegram-copywriter_vacancies-4383",
     "channel": "copywriter_vacancies",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер / менеджер reels/shorts",
@@ -1115,7 +968,8 @@
     "score": 75,
     "id": "telegram-dnative_job-11675",
     "channel": "dnative_job",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Контент-менеджер, ассистент",
@@ -1141,7 +995,8 @@
     "score": 75,
     "id": "telegram-dnative_job-11677",
     "channel": "dnative_job",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "PR- и контент-менеджер",
@@ -1167,7 +1022,8 @@
     "score": 75,
     "id": "telegram-dnative_job-11680",
     "channel": "dnative_job",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер / контент-маркетолог",
@@ -1193,7 +1049,8 @@
     "score": 75,
     "id": "telegram-dnative_job-11683",
     "channel": "dnative_job",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер",
@@ -1219,7 +1076,8 @@
     "score": 75,
     "id": "telegram-dnative_job-11684",
     "channel": "dnative_job",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер / контент-менеджер",
@@ -1245,7 +1103,8 @@
     "score": 75,
     "id": "telegram-dnative_job-11685",
     "channel": "dnative_job",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер",
@@ -1271,7 +1130,8 @@
     "score": 75,
     "id": "telegram-dnative_job-11686",
     "channel": "dnative_job",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "PR- и контент-менеджер",
@@ -1297,7 +1157,8 @@
     "score": 75,
     "id": "telegram-vacancysmm-17311",
     "channel": "vacancysmm",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-специалист в CLEANLAB detailing",
@@ -1323,7 +1184,8 @@
     "score": 75,
     "id": "telegram-marketing_jobs-11842",
     "channel": "marketing_jobs",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Контент-маркетолог",
@@ -1349,7 +1211,8 @@
     "score": 75,
     "id": "telegram-marketing_jobs-11845",
     "channel": "marketing_jobs",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Редактор моды со знанием английского",
@@ -1375,7 +1238,8 @@
     "score": 75,
     "id": "telegram-kopirayter_kopirayting-1567",
     "channel": "kopirayter_kopirayting",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "Журналист на тему моды, красоты, искусства",
@@ -1401,7 +1265,8 @@
     "score": 55,
     "id": "telegram-freelansta-1176",
     "channel": "freelansta",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-менеджер / контент-маркетолог",
@@ -1427,7 +1292,8 @@
     "score": 75,
     "id": "telegram-dnative_job100-1557",
     "channel": "dnative_job100",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   },
   {
     "title": "SMM-специалист",
@@ -1453,6 +1319,7 @@
     "score": 75,
     "id": "telegram-digitaltender-5644",
     "channel": "digitaltender",
-    "source_kind": "telegram_public"
+    "source_kind": "telegram_public",
+    "extraction_version": 2
   }
 ]
