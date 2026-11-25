@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T11:15:06Z",
+  "updated_at": "2026-11-25T11:21:05Z",
   "total": 62,
   "status": {
     "Яндекс": {
@@ -400,8 +400,8 @@
     "Нетология": {
       "status": "FOUND",
       "listing_pages": 1,
-      "links": 57,
-      "candidate_links": 12,
+      "links": 59,
+      "candidate_links": 14,
       "detail_checked": 4,
       "saved": 1
     },
@@ -505,6 +505,345 @@
       "detail_checked": 4,
       "saved": 0
     },
+    "X5 Group": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 13,
+      "candidate_links": 2,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "СИБУР": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "The read operation timed out"
+    },
+    "Норникель": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 169,
+      "candidate_links": 122,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Полюс": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 47,
+      "candidate_links": 28,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Домклик": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 25,
+      "candidate_links": 23,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "YADRO": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 477: "
+    },
+    "СДЭК": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 22,
+      "candidate_links": 15,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Cloud.ru": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 8,
+      "candidate_links": 3,
+      "detail_checked": 2,
+      "saved": 0
+    },
+    "Naumen": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 50,
+      "candidate_links": 20,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "ЛАНИТ": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Mindbox": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 15,
+      "candidate_links": 2,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Роснефть": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "Совкомбанк": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "НЛМК": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 154,
+      "candidate_links": 126,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "ЕВРАЗ": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "СберЗдоровье": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Самолёт": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 11,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "ЭР-Телеком": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 5,
+      "candidate_links": 1,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Ясно": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 36,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "DNS": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "YCLIENTS": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 16,
+      "candidate_links": 15,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Леста Игры": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 16,
+      "candidate_links": 15,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "М.Видео": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "S7 Airlines": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Okko": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    "Flowwow": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 404: Not Found"
+    },
+    "1С": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 60,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "РЖД": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "Росатом": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "Positive Technologies": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+    },
+    "МойСклад": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "Северсталь": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "Банк Санкт-Петербург": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "Московский кредитный банк": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "Азбука вкуса": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
+    "METRO Россия": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 31,
+      "candidate_links": 18,
+      "detail_checked": 4,
+      "saved": 0
+    },
+    "Уралсиб": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)>"
+    },
+    "ПИК": {
+      "status": "FETCH_ERROR",
+      "listing_pages": 0,
+      "links": 0,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "Росатом Инфраструктурные решения": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 205,
+      "candidate_links": 8,
+      "detail_checked": 1,
+      "saved": 0
+    },
+    "Самолёт Проект": {
+      "status": "NO_MATCHES_IN_CHECKED_PAGES",
+      "listing_pages": 1,
+      "links": 34,
+      "candidate_links": 0,
+      "detail_checked": 0,
+      "saved": 0
+    },
     "Telegram @theyseeku": {
       "posts_scanned": 20,
       "role_matches": 0,
@@ -555,14 +894,14 @@
     },
     "Telegram @zdemcv": {
       "posts_scanned": 20,
-      "role_matches": 3,
+      "role_matches": 2,
       "saved": 0,
       "status": "NO_MATCHES_IN_RECENT_PUBLIC_POSTS"
     },
     "Telegram @vdhl_good": {
       "posts_scanned": 19,
-      "role_matches": 6,
-      "saved": 4,
+      "role_matches": 4,
+      "saved": 2,
       "status": "FOUND"
     },
     "Telegram @pardashian": {
@@ -573,20 +912,20 @@
     },
     "Telegram @digital_jobster": {
       "posts_scanned": 16,
-      "role_matches": 4,
-      "saved": 2,
+      "role_matches": 3,
+      "saved": 1,
       "status": "FOUND"
     },
     "Telegram @rabota_go": {
       "posts_scanned": 20,
-      "role_matches": 3,
+      "role_matches": 2,
       "saved": 2,
       "status": "FOUND"
     },
     "Telegram @marketing_rabota_jobs": {
       "posts_scanned": 20,
-      "role_matches": 3,
-      "saved": 3,
+      "role_matches": 2,
+      "saved": 2,
       "status": "FOUND"
     },
     "Telegram @vacanciesrus": {
@@ -597,8 +936,8 @@
     },
     "Telegram @budujobs": {
       "posts_scanned": 7,
-      "role_matches": 2,
-      "saved": 2,
+      "role_matches": 1,
+      "saved": 1,
       "status": "FOUND"
     },
     "Telegram @cozy_hr": {
@@ -609,13 +948,13 @@
     },
     "Telegram @mirkreatorovjob": {
       "posts_scanned": 20,
-      "role_matches": 4,
-      "saved": 3,
+      "role_matches": 2,
+      "saved": 2,
       "status": "FOUND"
     },
     "Telegram @dddwork": {
       "posts_scanned": 20,
-      "role_matches": 8,
+      "role_matches": 7,
       "saved": 3,
       "status": "FOUND"
     },
@@ -627,7 +966,7 @@
     },
     "Telegram @freelancechoice": {
       "posts_scanned": 18,
-      "role_matches": 6,
+      "role_matches": 4,
       "saved": 0,
       "status": "NO_MATCHES_IN_RECENT_PUBLIC_POSTS"
     },
@@ -645,8 +984,8 @@
     },
     "Telegram @textodromo": {
       "posts_scanned": 20,
-      "role_matches": 4,
-      "saved": 2,
+      "role_matches": 3,
+      "saved": 1,
       "status": "FOUND"
     },
     "Telegram @self_ma": {
@@ -705,7 +1044,7 @@
     },
     "Telegram @vacancysmm": {
       "posts_scanned": 20,
-      "role_matches": 8,
+      "role_matches": 7,
       "saved": 1,
       "status": "FOUND"
     },
@@ -723,7 +1062,7 @@
     },
     "Telegram @seohr": {
       "posts_scanned": 20,
-      "role_matches": 1,
+      "role_matches": 0,
       "saved": 0,
       "status": "NO_MATCHES_IN_RECENT_PUBLIC_POSTS"
     },
@@ -765,7 +1104,7 @@
     },
     "Telegram @over100": {
       "posts_scanned": 20,
-      "role_matches": 1,
+      "role_matches": 0,
       "saved": 0,
       "status": "NO_MATCHES_IN_RECENT_PUBLIC_POSTS"
     },
@@ -791,8 +1130,8 @@
       "location": "Удалённо из России",
       "salary": "",
       "category": "Руководство",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "lead",
       "work_format": "Удалённо",
       "city": "Удалённо",
@@ -815,8 +1154,8 @@
       "location": "Удалённо из России",
       "salary": "от 120 000 ₽/мес",
       "category": "UX-тексты",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "middle",
       "work_format": "Удалённо",
       "city": "Удалённо",
@@ -839,8 +1178,8 @@
       "location": "Удалённо из России",
       "salary": "от 120 000 ₽/мес",
       "category": "UX-тексты",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "middle",
       "work_format": "Удалённо",
       "city": "Удалённо",
@@ -863,8 +1202,8 @@
       "location": "Удалённо из России",
       "salary": "",
       "category": "Редактура",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "middle",
       "work_format": "Удалённо",
       "city": "Удалённо",
@@ -887,8 +1226,8 @@
       "location": "Удалённо из России",
       "salary": "",
       "category": "Редактура",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "middle",
       "work_format": "Удалённо",
       "city": "Удалённо",
@@ -907,12 +1246,12 @@
           "url": "https://h.careers/job/b3fc4c2a-2e9f-4b2c-a977-05436cf2e8bf"
         }
       ],
-      "description": "Начинающий UX-редактор — Вакансия в Точка Банк в Точка | Эйч — сервис развития карьеры Вакансии Точка Начинающий UX-редактор — Вакан… Точка Начинающий UX-редактор — Вакансия в Точка Банк по рынку ≈ 163 125 ₽ в месяц • Не указано • Гибрид • Не указано Мэтчер AI-анализ соответствия резюме к вакансии Проверить резюме Подготовить отклик Адаптируем резюме под ATS-фильтры, подготовим сопроводительное на основе резюме и вакансии, соберём гайд подготовки к собеседованию, найдём контакты HR и нанимающих Подготовить отклик Вакансии Направления IT Поддержка Продажи Процессы и финансы HR Маркетинг Инфобез Вакансии Направления IT Поддержка Продажи Процессы и финансы HR Маркетинг Инфобез Начинающий UX-редактор Направление Маркетинг и пиар Удалённо от 100 000 ₽ От 1 года до 3 лет Ищем начинающего UX-редактора, который будет заботиться о согласованности Tone of Voice Точка Банка в интерфейсах и коммуникациях, а также помогать в разработке сервисов. Мы создаём онлайн-банк и экосистему сервисов для бизнеса. В нашей команде больше 6 000 сотрудников, а сервисами пользуются пользуются более 800 000 клиентов. О команде Тебе предстоит работать в команде, которая обустраивает цифровую среду для сотрудников. Ребята развивают наш корпоративный портал, мессенджер и другие внутренние инструменты, которыми каждый день пользуются тысячи сотрудников. Ты станешь полноценным участником команды и будешь решать задачи вместе с коллегами. Наши редакторы участвуют в дискавери и проектировании пользовательского пути, а ещё — бережно относятся к ритмике и тональности текста. Что делать Писать тексты для внутренних продуктов: работать с интерфейсами, рассылками и уведомлениями. Искать решения вместе с продакт-менеджерами и дизайнерами, подключаться к проработке сценария с самого начала. Предлагать и отстаивать изменения, если мнения в команде расходятся или предлагаемое решение может негативно повлиять на пользовательский опыт. Следить за консистентностью формулировок во всех внутренних продуктах. Ты подойдёшь, если Есть опыт работы UX-редактором в продукте от полугода и портфолио с интерфейсными кейсам",
+      "description": "Начинающий UX-редактор — Вакансия в Точка Банк в Точка | Эйч — сервис развития карьеры Сервис развития карьеры Контакты team@h.careers @hcareers Сервисы AI поиск работы new Поиск вакансий new Поиск компаний new Конструктор резюме new Вопросы с собеседований new Задачи с собеседований new Гайды к собеседованиям new Проверятор резюме new Генератор сопроводительных new Поиски себя Войти в IT Карьерная стратегия Повысить доход Профориентация Работа в России Сопровождение до оффера Найти работу в России Ревью портфолио Ревью резюме Тестовое собеседование Работа за рубежом Найти работу за границей Помощь в оформлении LinkedIn Ревью резюме на английском Тестовое собеседование на английском Навыки Личный бренд Оценка навыков Развитие навыков и компетенций Поддержка Выгорание Отношения с коллективом Отношения с руководителем Синдром самозванца Сложное увольнение Для бизнеса Аудит процессов компании Выступление на внутреннем мероприятии компании Консалтинг бизнеса Профессии HR Администрирование Аналитика Дизайн Информационная безопасность Искусственный интеллект Исследования Консалтинг Контент Маркетинг Менеджмент Наука и образование Офис Поддержка Предпринимательство Компания С чем помогаем Отзывы Вопросы и ответы Сертификаты Вебинары Стать ментором Услуги оказывает ООО «Эйч Карьера» ИНН 9710095807 ОГРН 1227700077340 Адрес: 127006, г. Москва, Старопименовский пер., д. 18, стр. 2, помещ./ком./этаж I/19/2 Платформа принадлежит ООО «Эйч Карьера» Copyright © 2020-2025 Сервис развития карьеры Эйч . Все права защищены. Политика конфиденциальности Пользовательское соглашение Оферта Вакансии Точка Начинающий UX-редактор — Вакан… Точка Начинающий UX-редактор — Вакансия в Точка Банк по рынку ≈ 163 125 ₽ в месяц • Не указано • Гибрид • Не указано Мэтчер AI-анализ соответствия резюме к вакансии Проверить резюме Подготовить отклик Адаптируем резюме под ATS-фильтры, подготовим сопроводительное на основе резюме и вакансии, соберём гайд подготовки к собеседованию, найдём контакты HR и нанимающих Подготовить отклик Вакансии Направления IT Поддержка Продажи Процессы и финансы HR Маркетинг И",
       "location": "Удалённо из России",
       "salary": "",
       "category": "UX-тексты",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "middle",
       "work_format": "Удалённо",
       "city": "Удалённо",
@@ -931,12 +1270,12 @@
           "url": "https://h.careers/job/79ba85c1-78e2-4385-8a32-b575a03872b8"
         }
       ],
-      "description": "Коммерческий редактор в Точка Банк | Эйч — сервис развития карьеры Вакансии Точка Банк Коммерческий редактор Точка Банк Коммерческий редактор от 150 000 ₽ в месяц • Удалённо • Удалённо, Офис • Middle Мэтчер AI-анализ соответствия резюме к вакансии Проверить резюме Подготовить отклик Адаптируем резюме под ATS-фильтры, подготовим сопроводительное на основе резюме и вакансии, соберём гайд подготовки к собеседованию, найдём контакты HR и нанимающих Подготовить отклик Обязанности: писать и редактировать тексты для промокоммуникаций: лендингов, email-рассылок, пуш-уведомлений, баннеров и так далее; создавать контент для продвижения: рекламные креативы, посевы в телеграм-каналах, материалы для онлайн- и офлайн-мероприятий; адаптировать тексты под разные каналы и этапы воронки: от привлечения до повторных продаж; следить за конверсией текста и предлагать идеи по улучшению показателей; следить за тем, чтобы коммуникации были понятными, логичными и работали на узнаваемость и продажи; участвовать в планировании, чтобы быть в курсе обновлений продукта и важных акцентов в текстах. Требования: опыт работы коммерческим редактором от 2 лет (в финтехе или в B2B-продуктах будет преимуществом); навык написания текстов для разных промоканалов: лендингов, email, пушей, баннеров, сторис и так далее; понимание, как маркетинг влияет на бизнес-результаты и какую роль в этом играет текст; опыт работы с метриками: умение анализировать конверсию и делать выводы; способность цель текста и делать все, чтобы ее достичь; умение работать автономно: не ждете указаний, но при этом всегда синхронизируетесь с командой; спокойное отношение к правкам и доработка текста, если бизнес-задача изменилась. Условия: заработная плата: от 150000 рублей в месяц до вычета налогов (точная сумма зависит от навыков и ожиданий, обсуждается индивидуально, с 2025 года ставка НДФЛ меняется в зависимости от суммарного дохода за год); полная занятость, 5/2; гибкое начало и окончание дня; удаленный формат или работа в офисе в городах присутствия; курсы за счет компании, своя библиотека и платформа с онлайн-обучением (есть ",
+      "description": "Коммерческий редактор в Точка Банк | Эйч — сервис развития карьеры Сервис развития карьеры Контакты team@h.careers @hcareers Сервисы AI поиск работы new Поиск вакансий new Поиск компаний new Конструктор резюме new Вопросы с собеседований new Задачи с собеседований new Гайды к собеседованиям new Проверятор резюме new Генератор сопроводительных new Поиски себя Войти в IT Карьерная стратегия Повысить доход Профориентация Работа в России Сопровождение до оффера Найти работу в России Ревью портфолио Ревью резюме Тестовое собеседование Работа за рубежом Найти работу за границей Помощь в оформлении LinkedIn Ревью резюме на английском Тестовое собеседование на английском Навыки Личный бренд Оценка навыков Развитие навыков и компетенций Поддержка Выгорание Отношения с коллективом Отношения с руководителем Синдром самозванца Сложное увольнение Для бизнеса Аудит процессов компании Выступление на внутреннем мероприятии компании Консалтинг бизнеса Профессии HR Администрирование Аналитика Дизайн Информационная безопасность Искусственный интеллект Исследования Консалтинг Контент Маркетинг Менеджмент Наука и образование Офис Поддержка Предпринимательство Компания С чем помогаем Отзывы Вопросы и ответы Сертификаты Вебинары Стать ментором Услуги оказывает ООО «Эйч Карьера» ИНН 9710095807 ОГРН 1227700077340 Адрес: 127006, г. Москва, Старопименовский пер., д. 18, стр. 2, помещ./ком./этаж I/19/2 Платформа принадлежит ООО «Эйч Карьера» Copyright © 2020-2025 Сервис развития карьеры Эйч . Все права защищены. Политика конфиденциальности Пользовательское соглашение Оферта Вакансии Точка Банк Коммерческий редактор Точка Банк Коммерческий редактор от 150 000 ₽ в месяц • Удалённо • Удалённо, Офис • Middle Мэтчер AI-анализ соответствия резюме к вакансии Проверить резюме Подготовить отклик Адаптируем резюме под ATS-фильтры, подготовим сопроводительное на основе резюме и вакансии, соберём гайд подготовки к собеседованию, найдём контакты HR и нанимающих Подготовить отклик Обязанности: писать и редактировать тексты для промокоммуникаций: лендингов, email-рассылок, пуш-уведомлений, баннеров и так д",
       "location": "Удалённо из России",
       "salary": "",
       "category": "Редактура",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "middle",
       "work_format": "Удалённо",
       "city": "Удалённо",
@@ -959,8 +1298,8 @@
       "location": "ТК РФ",
       "salary": "",
       "category": "Редактура",
-      "seen_at": "2026-11-25T11:15:06Z",
-      "first_seen_at": "2026-11-25T11:15:06Z",
+      "seen_at": "2026-11-25T11:21:05Z",
+      "first_seen_at": "2026-11-25T11:21:05Z",
       "level": "middle",
       "work_format": "",
       "city": "ТК РФ",
@@ -970,8 +1309,8 @@
       "id": "24e26631d60aa848"
     },
     {
-      "title": "ищет контент-редактора",
-      "company": "Компания не указана",
+      "title": "контент-редактора",
+      "company": "Работодатель не указан",
       "url": "https://t.me/copywriter_vacancies/4383",
       "sources": [
         {
@@ -997,7 +1336,7 @@
     },
     {
       "title": "Редактор-новостник",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/forallmedia/4355",
       "sources": [
         {
@@ -1049,7 +1388,7 @@
     },
     {
       "title": "Старший редактор в Yadro",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/mirkreatorovjob/1694",
       "sources": [
         {
@@ -1101,7 +1440,7 @@
     },
     {
       "title": "SMM-менеджер",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dnative_job/11686",
       "sources": [
         {
@@ -1127,7 +1466,7 @@
     },
     {
       "title": "SMM-менеджер / контент-менеджер",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dnative_job/11685",
       "sources": [
         {
@@ -1152,8 +1491,8 @@
       "source_kind": "telegram_public"
     },
     {
-      "title": "Издательство \"Эксмодетство\" ищет опытного РЕДАКТОРА в группу детской научно-познавательной литературы!",
-      "company": "Компания не указана",
+      "title": "опытного РЕДАКТОРА в группу детской научно-познавательной литературы",
+      "company": "Работодатель не указан",
       "url": "https://t.me/vdhl_good/34047",
       "sources": [
         {
@@ -1162,14 +1501,14 @@
         }
       ],
       "description": "Издательство \"Эксмодетство\" ищет опытного РЕДАКТОРА в группу детской научно-познавательной литературы! Обязанности: полный цикл создания книги, взаимодействие с внутренними отделами и внешними партнёрами, подготовка ТЗ для художников и рекламных текстов, разработка обложек, анализ книжного рынка, поиск новых проектов и авторов, контроль допечатных сроков, работа с документами и 1С. Требования: релевантный опыт работы редактором, высшее образование (редакторское, лингвистическое, переводческое или филологическое), знание английского языка, Word, Excel и PowerPoint. Грамотность, внимательность, пунктуальность и умение работать в команде. Условия: официальное оформление по ТК РФ, оклад + ежеквартальная премия, ДМС, обучение, корпоративные скидки и мероприятия, бесплатный спортзал. График 5/2 с 9:30/10:00 до 18:00/18:30. Офис в 5 минутах от м. Полежаевская. Присылайте резюме редактору Марине : Shulman.mb@eksmo.ru С кандидатами свяжется HR-менеджер для приглашения на собеседование. Источник: https://t.me/copywriter_vacancies",
-      "location": "ТК РФ",
+      "location": "Россия",
       "salary": "",
       "category": "Редактура",
       "seen_at": "2026-11-24T08:44:42Z",
       "first_seen_at": "2026-11-24T08:44:42Z",
       "level": "middle",
       "work_format": "",
-      "city": "ТК РФ",
+      "city": "Россия",
       "salary_estimate": "80–110 тыс. ₽",
       "salary_estimate_basis": 7,
       "score": 75,
@@ -1179,7 +1518,7 @@
     },
     {
       "title": "SMM-менеджер",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dnative_job/11684",
       "sources": [
         {
@@ -1205,7 +1544,7 @@
     },
     {
       "title": "SMM-менеджер / контент-маркетолог",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dnative_job/11683",
       "sources": [
         {
@@ -1234,8 +1573,8 @@
       "source_kind": "telegram_public"
     },
     {
-      "title": "ищет опытного редактора",
-      "company": "Компания не указана",
+      "title": "опытного редактора",
+      "company": "Работодатель не указан",
       "url": "https://t.me/copywriter_vacancies/4380",
       "sources": [
         {
@@ -1244,14 +1583,14 @@
         }
       ],
       "description": "Издательство \"Эксмодетство\" ищет опытного редактора в группу детской научно-познавательной литературы! Обязанности: полный цикл создания книги, взаимодействие с внутренними отделами и внешними партнёрами, подготовка ТЗ для художников и рекламных текстов, разработка обложек, анализ книжного рынка, поиск новых проектов и авторов, контроль допечатных сроков, работа с документами и 1С. Требования: релевантный опыт работы редактором, высшее образование (редакторское, лингвистическое, переводческое или филологическое), знание английского языка, Word, Excel и PowerPoint. Грамотность, внимательность, пунктуальность и умение работать в команде. Условия: официальное оформление по ТК РФ, оклад + ежеквартальная премия, ДМС, обучение, корпоративные скидки и мероприятия, бесплатный спортзал. График 5/2 с 9:30/10:00 до 18:00/18:30. Офис в 5 минутах от м. Полежаевская. Присылайте резюме редактору Марине: Shulman.mb@eksmo.ru С кандидатами свяжется HR-менеджер для приглашения на собеседование.",
-      "location": "ТК РФ",
+      "location": "Россия",
       "salary": "",
       "category": "Редактура",
       "seen_at": "2026-11-24T07:28:16Z",
       "first_seen_at": "2026-11-24T07:28:16Z",
       "level": "middle",
       "work_format": "",
-      "city": "ТК РФ",
+      "city": "Россия",
       "salary_estimate": "80–110 тыс. ₽",
       "salary_estimate_basis": 7,
       "score": 75,
@@ -1261,7 +1600,7 @@
     },
     {
       "title": "Редактор-сборщик контента в lifestyle-приложение (досуг и знакомства)",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/self_ma/5554",
       "sources": [
         {
@@ -1339,7 +1678,7 @@
     },
     {
       "title": "SMM-специалист в АНО Институт развития образовательных, платформенных и цифровых решений",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/perezvonyu/9392",
       "sources": [
         {
@@ -1365,7 +1704,7 @@
     },
     {
       "title": "PR- и контент-менеджер",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dnative_job/11680",
       "sources": [
         {
@@ -1421,7 +1760,7 @@
     },
     {
       "title": "Middle+ SMM-менеджер",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/marketing_rabota_jobs/847",
       "sources": [
         {
@@ -1473,7 +1812,7 @@
     },
     {
       "title": "Контент-менеджер/мейкер | Москва, условия по оплате в лс",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/textodromo/17452",
       "sources": [
         {
@@ -1498,8 +1837,8 @@
       "source_kind": "telegram_public"
     },
     {
-      "title": "Мониторите инфоповоды и предлагаете выпускающему редактору",
-      "company": "Компания не указана",
+      "title": "НОВОСТНИК в Т-⁠Инвестиции",
+      "company": "Работодатель не указан",
       "url": "https://t.me/vdhl_good/34039",
       "sources": [
         {
@@ -1525,7 +1864,7 @@
     },
     {
       "title": "Редактор медиапроектов",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/work_editor/6806",
       "sources": [
         {
@@ -1551,7 +1890,7 @@
     },
     {
       "title": "Редактор по математике Издательства",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/work_editor/6805",
       "sources": [
         {
@@ -1577,7 +1916,7 @@
     },
     {
       "title": "SMM-менеджер в Авто В Руки",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/perezvonyu/9386",
       "sources": [
         {
@@ -1603,7 +1942,7 @@
     },
     {
       "title": "Журналист на тему моды, красоты, искусства",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/freelansta/1176",
       "sources": [
         {
@@ -1629,7 +1968,7 @@
     },
     {
       "title": "SMM-менеджер в Yves Rocher",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/workasap/5653",
       "sources": [
         {
@@ -1681,7 +2020,7 @@
     },
     {
       "title": "Контент-менеджер, ассистент",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dnative_job/11677",
       "sources": [
         {
@@ -1707,7 +2046,7 @@
     },
     {
       "title": "Главный редактор квизов (Squiz)",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/work_editor/6803",
       "sources": [
         {
@@ -1733,7 +2072,7 @@
     },
     {
       "title": "Редактор моды со знанием английского",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/kopirayter_kopirayting/1567",
       "sources": [
         {
@@ -1785,7 +2124,7 @@
     },
     {
       "title": "SMM-специалист",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/digitaltender/5644",
       "sources": [
         {
@@ -1811,7 +2150,7 @@
     },
     {
       "title": "Креативный копирайтер",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/forallmedia/4347",
       "sources": [
         {
@@ -1837,7 +2176,7 @@
     },
     {
       "title": "Копирайтер в проект о недвижимости",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/copywriter_vacancies/4377",
       "sources": [
         {
@@ -1863,7 +2202,7 @@
     },
     {
       "title": "Технический писатель",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/work_editor/6799",
       "sources": [
         {
@@ -1915,7 +2254,7 @@
     },
     {
       "title": "SMM-менеджер / менеджер reels/shorts",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dnative_job/11675",
       "sources": [
         {
@@ -1940,8 +2279,8 @@
       "source_kind": "telegram_public"
     },
     {
-      "title": "ищет редактора-новостника",
-      "company": "Компания не указана",
+      "title": "редактора-новостника",
+      "company": "Работодатель не указан",
       "url": "https://t.me/copywriter_vacancies/4376",
       "sources": [
         {
@@ -1967,7 +2306,7 @@
     },
     {
       "title": "Редактор сайта и социальных сетей",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/work_editor/6796",
       "sources": [
         {
@@ -2019,7 +2358,7 @@
     },
     {
       "title": "Новостной редактор в МегаФон",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/budujobs/12361",
       "sources": [
         {
@@ -2045,7 +2384,7 @@
     },
     {
       "title": "Контент-маркетолог",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/marketing_jobs/11845",
       "sources": [
         {
@@ -2123,7 +2462,7 @@
     },
     {
       "title": "Редактор базы знаний в МТС",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/mirkreatorovjob/1678",
       "sources": [
         {
@@ -2149,7 +2488,7 @@
     },
     {
       "title": "Редактор социальных сетей",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dddwork/5300",
       "sources": [
         {
@@ -2175,7 +2514,7 @@
     },
     {
       "title": "SMM-специалист / контент-продюсер",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dddwork/5297",
       "sources": [
         {
@@ -2227,7 +2566,7 @@
     },
     {
       "title": "SMM-специалист в CLEANLAB detailing",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/marketing_jobs/11842",
       "sources": [
         {
@@ -2253,7 +2592,7 @@
     },
     {
       "title": "редактора для ведущего отраслевого Telegram-канала о строительстве и недвижимости «Всё о стройке",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/copywriter_vacancies/4373",
       "sources": [
         {
@@ -2279,7 +2618,7 @@
     },
     {
       "title": "Новостной редактор",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/dddwork/5296",
       "sources": [
         {
@@ -2305,7 +2644,7 @@
     },
     {
       "title": "Новостной редактор",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/marketing_rabota_jobs/838",
       "sources": [
         {
@@ -2330,8 +2669,8 @@
       "source_kind": "telegram_public"
     },
     {
-      "title": "ищет редактора",
-      "company": "Компания не указана",
+      "title": "редактора",
+      "company": "Работодатель не указан",
       "url": "https://t.me/copywriter_vacancies/4371",
       "sources": [
         {
@@ -2357,7 +2696,7 @@
     },
     {
       "title": "SMM-менеджер / Контент-мейкер в клинику эстетической медицины «ГАЛАКТИКА» (Москва)",
-      "company": "Компания не указана",
+      "company": "Работодатель не указан",
       "url": "https://t.me/workasap/5638",
       "sources": [
         {
