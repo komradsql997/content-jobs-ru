@@ -29,4 +29,17 @@ class TelegramPublicTests(unittest.TestCase):
   block=sample("Редактор<br>Компания: А<br>Москва<br>Требования: опыт")
   j,_=t.parse_preview(block+block,"work_editor")
   self.assertEqual(len(j),1)
+
+ def test_skip_resume(self):
+  html=sample("Резюме: Контент-менеджер<br>Москва<br>Ищу работу редактором, опыт 2 года. Портфолио в профиле.")
+  j,_=t.parse_preview(html,"work_editor")
+  self.assertEqual(j,[])
+ def test_skip_multi_post(self):
+  html=sample("Подборка вакансий<br>Редактор в компании А<br>SMM в компании Б<br>Москва, условия разные.")
+  j,_=t.parse_preview(html,"work_editor")
+  self.assertEqual(j,[])
+ def test_skip_unrelated_video_role(self):
+  html=sample("ВИДЕОГРАФ<br>Москва<br>Участвовать в разработке контент-стратегии и предлагать идеи редактору.")
+  j,_=t.parse_preview(html,"work_editor")
+  self.assertEqual(j,[])
 if __name__=="__main__":unittest.main()

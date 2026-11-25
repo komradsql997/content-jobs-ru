@@ -40,25 +40,36 @@ def text_lines(raw):
 
 def job_title(raw):
     lines=text_lines(raw)
-    for line in lines[:12]:
+    if not lines:return ""
+    beginning=" ".join(lines[:2]).lower()
+    if re.search(r"^резюме\b|^ищу\s+работу|^подборк[аи]\s+ваканс|^ищет\s+работу|^анкета\s+кандидата",beginning,re.I):
+        return ""
+    # Posts about an entirely different role must not be classified by their duties.
+    if re.search(r"\b(?:видеограф|видеооператор|дизайнер|монтаж[её]р)\b",lines[0],re.I) and not is_role(lines[0]):
+        return ""
+    for line in lines[:6]:
         line=START.sub("",line)
-        if 5<=len(line)<=135 and is_role(line):
-            return line
-        # Titles often use "Company | Editor | remote" format; find the role segment
-        for piece in re.split(r"\s*[|•]\s*",line)[:4]:
-            if 5<=len(piece)<=100 and is_role(piece):return piece
+        line=re.sub(r"^(?:должность|позиция|роль)\s*[:—–-]?\s*", "", line, flags=re.I)
+        line=re.sub(r"^.*?\bищет\s+(?=[^\n]{0,40}(?:редактор|копирайт|smm|контент))","",line,flags=re.I)
+        if re.match(r"^(?:участвовать|помогать|поддерживать|создавать|разрабатывать|писать|подбирать|анализировать|следить|мониторить|проводить|публиковать)\b",line,re.I):
+            continue
+        if 5<=len(line)<=105 and is_role(line):
+            return line.strip(" !,.;")
+        for piece in re.split(r"\s*[|•]\s*",line)[:3]:
+            if 5<=len(piece)<=90 and is_role(piece):return piece
     return ""
 
 def company(raw):
     m=re.search(r"(?im)^\s*(?:компания|работодатель|проект)\s*[:—–-]\s*(.{2,90})$",raw)
-    return m.group(1).strip() if m else "Компания не указана"
+    return m.group(1).strip() if m else "Работодатель не указан"
 
 def location(raw):
     if FOREIGN.search(raw[:1500]):return ""
     m=LOCATION.search(raw[:1600])
     if m:return "Удалённо из России"
     m=RU.search(raw[:1600])
-    if m:return m.group(0)
+    if m:
+        return "Россия" if "ТК" in m.group(0).upper() else m.group(0)
     return ""
 
 def salary(raw):
