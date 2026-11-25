@@ -112,6 +112,7 @@ def parse_preview(html, channel, now=None):
         j["id"]="telegram-"+post.replace("/","-")
         j["channel"]=channel
         j["source_kind"]="telegram_public"
+        j["extraction_version"]=2
         j["seen_at"]=date.astimezone(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00","Z")
         j["first_seen_at"]=j["seen_at"]
         j["sources"]=[{"name":"Telegram · @"+channel,"url":url}]
@@ -159,6 +160,9 @@ def retain(jobs):
     out=[]
     for j in jobs:
         try:
+            # Old parser output included resumes and action sentences as job titles.
+            # Refresh from the public source rather than retaining low-quality cached cards.
+            if int(j.get("extraction_version",0))<2:continue
             moment=dt.datetime.fromisoformat(j["seen_at"].replace("Z","+00:00"))
             if dt.timedelta(0)<=now-moment<dt.timedelta(days=MAX_AGE):out.append(j)
         except (TypeError,ValueError,KeyError):pass

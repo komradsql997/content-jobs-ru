@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight reachability audit. Telegram is catalogued but never scraped."""
+"""Lightweight reachability audit. Telegram public previews are checked separately; this audit checks employer pages."""
 from __future__ import annotations
 import concurrent.futures, datetime as dt, json, ssl, socket
 from urllib.request import Request, urlopen
@@ -13,7 +13,7 @@ AGENT="ContentJobsRU/0.2 (+https://github.com/komradsql997/content-jobs-ru)"
 def probe(entry):
     row={"id":entry["id"],"name":entry["name"],"url":entry["url"],"kind":entry["type"]}
     if entry["type"]=="telegram_channel":
-        row["status"]="PENDING_LICENSED_FEED"
+        row["status"]="PUBLIC_PREVIEW_MONITORED_SEPARATELY"
         return row
     try:
         request=Request(entry["url"],headers={"User-Agent":AGENT,"Accept-Language":"ru-RU,ru;q=0.9"})
