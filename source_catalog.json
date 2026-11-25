@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-11-24",
-    "method": "Curated candidate source list; channels are not connected until external provider access and data rights are confirmed",
+    "generated_at": "2026-11-25",
+    "method": "Curated career sources: company URL discovery is separate from successful job ingestion; GitHub Actions checks every candidate. Telegram candidates are public preview URLs.",
     "coverage": "Russian employment intended; each vacancy must be checked for Russia-only eligibility",
-    "total": 105,
-    "company_sources": 60,
+    "total": 145,
+    "company_sources": 100,
     "telegram_sources": 45,
     "verified_ingestors": [
       "Яндекс"
@@ -911,6 +911,366 @@
       "url": "https://t.me/digitaltender",
       "status": "awaiting_licensed_feed",
       "access": "provider_api_license_and_content_rights_required"
+    },
+    {
+      "id": "company-61",
+      "type": "company_career",
+      "name": "X5 Group",
+      "url": "https://rabota.x5.ru/vacancies",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-62",
+      "type": "company_career",
+      "name": "СИБУР",
+      "url": "https://career.sibur.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-63",
+      "type": "company_career",
+      "name": "Норникель",
+      "url": "https://career.nornickel.ru/vacancies/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-64",
+      "type": "company_career",
+      "name": "Полюс",
+      "url": "https://career.polyus.com/vacancies/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-65",
+      "type": "company_career",
+      "name": "Домклик",
+      "url": "https://career.domclick.ru/vacancies",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-66",
+      "type": "company_career",
+      "name": "YADRO",
+      "url": "https://careers.yadro.com/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-67",
+      "type": "company_career",
+      "name": "СДЭК",
+      "url": "https://rabota.cdek.ru/vacancies",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-68",
+      "type": "company_career",
+      "name": "Cloud.ru",
+      "url": "https://cloud.ru/career",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-69",
+      "type": "company_career",
+      "name": "Naumen",
+      "url": "https://www.naumen.ru/career/vacancies/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-70",
+      "type": "company_career",
+      "name": "ЛАНИТ",
+      "url": "https://job.lanit.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-71",
+      "type": "company_career",
+      "name": "Mindbox",
+      "url": "https://jobs.mindbox.ru/vacancies/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-72",
+      "type": "company_career",
+      "name": "Роснефть",
+      "url": "https://www.rosneft.ru/about/career/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-73",
+      "type": "company_career",
+      "name": "Совкомбанк",
+      "url": "https://work.sovcombank.ru/start",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-74",
+      "type": "company_career",
+      "name": "НЛМК",
+      "url": "https://career.nlmk.com/vacancy/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-75",
+      "type": "company_career",
+      "name": "ЕВРАЗ",
+      "url": "https://www.evraz.com/ru/careers/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-76",
+      "type": "company_career",
+      "name": "СберЗдоровье",
+      "url": "https://vacancy.sberhealth.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-77",
+      "type": "company_career",
+      "name": "Самолёт",
+      "url": "https://career.samolet.ru/vakansii/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-78",
+      "type": "company_career",
+      "name": "ЭР-Телеком",
+      "url": "https://job.ertelecom.ru/vacancies",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-79",
+      "type": "company_career",
+      "name": "Ясно",
+      "url": "https://work.yasno.live/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-80",
+      "type": "company_career",
+      "name": "DNS",
+      "url": "https://www.dns-shop.ru/about/career",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-81",
+      "type": "company_career",
+      "name": "YCLIENTS",
+      "url": "https://yclients.huntflow.io/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-82",
+      "type": "company_career",
+      "name": "Леста Игры",
+      "url": "https://join.lesta.team/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-83",
+      "type": "company_career",
+      "name": "М.Видео",
+      "url": "https://career.mvideoeldorado.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-84",
+      "type": "company_career",
+      "name": "S7 Airlines",
+      "url": "https://www.s7.ru/ru/vacancies/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-85",
+      "type": "company_career",
+      "name": "Okko",
+      "url": "https://careers.okko.tv/4/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "career_url_from_industry_source",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-86",
+      "type": "company_career",
+      "name": "Flowwow",
+      "url": "https://flowwow.yonote.ru/share/f7db9733-d972-4e24-8db3-95c458e99655",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "career_url_from_industry_source",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-87",
+      "type": "company_career",
+      "name": "1С",
+      "url": "https://1c.ru/rus/firm1c/vacan/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-88",
+      "type": "company_career",
+      "name": "РЖД",
+      "url": "https://team.rzd.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-89",
+      "type": "company_career",
+      "name": "Росатом",
+      "url": "https://rosatom-career.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-90",
+      "type": "company_career",
+      "name": "Positive Technologies",
+      "url": "https://ptsecurity.com/about/vacancy/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-91",
+      "type": "company_career",
+      "name": "МойСклад",
+      "url": "https://www.moysklad.ru/company/careers/vacancy/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-92",
+      "type": "company_career",
+      "name": "Северсталь",
+      "url": "https://www.severstal.com/rus/career/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "candidate_career_path_requires_validation",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-93",
+      "type": "company_career",
+      "name": "Банк Санкт-Петербург",
+      "url": "https://job.bspb.ru/vacancies",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-94",
+      "type": "company_career",
+      "name": "Московский кредитный банк",
+      "url": "https://mkb.ru/about/work",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-95",
+      "type": "company_career",
+      "name": "Азбука вкуса",
+      "url": "https://jobazbuka.av.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-96",
+      "type": "company_career",
+      "name": "METRO Россия",
+      "url": "https://rabota.metro-cc.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-97",
+      "type": "company_career",
+      "name": "Уралсиб",
+      "url": "https://team.uralsib.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-98",
+      "type": "company_career",
+      "name": "ПИК",
+      "url": "https://www.pik.ru/about/career",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "candidate_career_path_requires_validation",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-99",
+      "type": "company_career",
+      "name": "Росатом Инфраструктурные решения",
+      "url": "https://rir.rosatom.ru/about/career/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
+    },
+    {
+      "id": "company-100",
+      "type": "company_career",
+      "name": "Самолёт Проект",
+      "url": "https://career-samoletproekt.ru/",
+      "status": "candidate_awaiting_ingestor_confirmation",
+      "basis": "official_career_url_verified_by_web_lookup",
+      "access": "public_career_page"
     }
   ]
 }
