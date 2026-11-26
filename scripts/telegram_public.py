@@ -107,7 +107,7 @@ def parse_preview(html, channel, now=None):
         region=location(raw)
         if not region:continue
         url="https://t.me/"+post
-        j=make_job(title,company(raw),url,raw[:1900],region,salary(raw))
+        j=make_job(title,company(raw),url,raw[:5800],region,salary(raw))
         if not j:continue
         j["id"]="telegram-"+post.replace("/","-")
         j["channel"]=channel

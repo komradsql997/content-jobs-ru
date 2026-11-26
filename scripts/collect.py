@@ -25,6 +25,14 @@ MAX_AGE_DAYS = 7
 def plain(value, limit=2500):
     return re.sub(r"\s+", " ", str(value or "")).strip()[:limit]
 
+def preserve_paragraphs(value, limit=6500):
+    """Retain authored text boundaries so vacancy details are readable."""
+    text = str(value or "").replace("\r\n","\n").replace("\r","\n")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r" *\n *", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()[:limit]
+
 def canonical(url):
     p = urlparse(url)
     q = [(k,v) for k,v in parse_qsl(p.query) if k not in ("utm_source","utm_medium","utm_campaign","utm_content","utm_term","from","ref")]
@@ -152,7 +160,7 @@ def structured_salary(data):
 
 def structured_job(obj,base,company):
     title=plain(obj.get("title"),170)
-    desc=plain(BeautifulSoup(str(obj.get("description","")), "html.parser").get_text(" "),2100)
+    desc=preserve_paragraphs(BeautifulSoup(str(obj.get("description","")), "html.parser").get_text("\n",strip=True))
     loc=obj.get("jobLocation",[])
     if isinstance(loc,dict): loc=[loc]
     location=" ".join(plain((x.get("address") or {}).get("addressLocality",""),100) for x in loc if isinstance(x,dict))
@@ -162,7 +170,7 @@ def structured_job(obj,base,company):
     return make_job(title, company, urljoin(base,str(url)), desc, location, salary)
 
 def make_job(title,company,url,description="",location="",salary=""):
-    title=plain(title,180); description=plain(description,2100); location=plain(location,140)
+    title=plain(title,180); description=preserve_paragraphs(description,6500); location=plain(location,140)
     if not is_role(title) or FOREIGN.search(title+" "+location): return None
     if not location:
         m=RU.search(description)
@@ -187,13 +195,13 @@ def parse_detail(url,company,location_hint=""):
     title=plain(heading.get_text(" ") if heading else "",180)
     # Third-party pages sometimes append a generic site label to the role name.
     title=re.sub(r"\\s*[—–-]\\s*Вакансия в .*$","",title,flags=re.I)
-    full_text=(soup.select_one("main") or soup.body or soup).get_text(" ",strip=True)
+    full_text=(soup.select_one("main") or soup.body or soup).get_text("\n",strip=True)
     if re.search(r"вакансия в архиве|эта вакансия в архиве|вакансия закрыта|позиция закрыта|не актуальна|показать закрытую вакансию",full_text[:1000],re.I):
         return None
     if title and title in full_text:
         # Some third-party career pages prepend unrelated site navigation and promotions.
         full_text=full_text[full_text.find(title):]
-    excerpt=plain(full_text,2200)
+    excerpt=preserve_paragraphs(full_text,6500)
     location=""
     # Russian employment region can be stated in the benefits section after the main excerpt.
     remote_ru=re.search(r"(?:из любого региона РФ|из любого региона России|удал[её]нн(?:ая|о) работа из РФ|удал[её]нн(?:ая|о) работа из России|работа из любого региона РФ)",full_text,re.I)
