@@ -24,11 +24,14 @@
  [...new Set([job.category,format,job.location,job.level].filter(Boolean))]
   .forEach(v=>tags.append(make("span","tag",v)));
  head.append(tags);
- if(job.salary)head.append(make("div","salary-label",job.salary));
- else if(job.salary_estimate&&job.salary_estimate_basis>=3){
-  const estimate=make("p","salary-estimate","Ориентир по нашим данным: "+job.salary_estimate);
-  estimate.append(make("span","","Это оценка по другим вакансиям, а не предложение работодателя"));
-  head.append(estimate);
+ if(job.salary){
+  head.append(make("div","salary-label","Зарплата в объявлении: "+job.salary));
+ }else if(job.salary_estimate){
+  const box=make("p","salary-estimate","Наш ориентир: "+job.salary_estimate);
+  box.append(make("span","","Предположение по рынку РФ. Работодатель зарплату не указал."));
+  head.append(box);
+ }else{
+  head.append(make("p","salary-estimate","Зарплата не указана. Для проектной или частичной занятости месячный ориентир не рассчитываем."));
  }
  if(!data.active)head.append(make("p","job-availability","Вакансия больше не показывается в актуальной ленте. Проверь, открыта ли она, у работодателя."));
  const actions=make("div","job-actions");

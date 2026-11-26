@@ -39,6 +39,23 @@ test("counter counts readable sources",()=>{
  "Telegram @a":{status:"FOUND"},"Telegram @b":{status:"NO_MATCHES_IN_RECENT_PUBLIC_POSTS"}};
  assert.equal(helper.checkedSources(status),4);
 });
+test("list omits ambiguous detail labels and estimates",()=>{
+ const app=fs.readFileSync(path.join(__dirname,"../site/app.js"),"utf8");
+ const html=fs.readFileSync(path.join(__dirname,"../site/index.html"),"utf8");
+ const detail=fs.readFileSync(path.join(__dirname,"../site/job-detail.js"),"utf8");
+ assert.doesNotMatch(app,/make\("span","job-open","Подробнее"\)/);
+ assert.doesNotMatch(app,/Ориентир по нашим данным/);
+ assert.doesNotMatch(html,/01 \/ Вакансии/);
+ assert.match(detail,/Предположение по рынку РФ/);
+ assert.doesNotMatch(detail,/Оценка по.*ваканси/);
+});
+test("a post promo footer is removed without affecting actual requirements",()=>{
+ const raw="Копирайтер-редактор. Что нужно делать:\n• Писать статьи\n• Редактировать новости\n➖\n➖\n📣\nРазместить вакансию\n/\nрекламу\n⚡️\nПолучать больше вакансий";
+ const p=helper.parseSections(raw);
+ assert.ok(p.some(x=>x.kind==="tasks"));
+ assert.ok(!JSON.stringify(p).includes("Получать больше"));
+ assert.ok(!JSON.stringify(p).includes("Разместить вакансию"));
+});
 test("list uses shareable pages and hides scoring",()=>{
  const index=fs.readFileSync(path.join(__dirname,"../site/index.html"),"utf8");
  const app=fs.readFileSync(path.join(__dirname,"../site/app.js"),"utf8");

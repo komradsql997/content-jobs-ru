@@ -9,8 +9,9 @@ const salaryNumber=s=>{const m=(s||"").replace(/\s/g,"").match(/\d{5,7}/);return
 const seen=j=>j.first_seen_at||j.seen_at||"";
 const linkFor=j=>"./v/"+encodeURIComponent(j.id)+".html";
 function salaryDisplay(j,parent){
- if(j.salary){parent.append(make("p","salary-label",j.salary));return}
- if(j.salary_estimate&&j.salary_estimate_basis>=3){const p=make("p","salary-estimate","Ориентир по нашим данным: "+j.salary_estimate);p.append(make("span","","Оценка по "+j.salary_estimate_basis+" другим вакансиям, не предложение работодателя"));parent.append(p)}
+ // Listing shows only pay explicitly offered by employer.
+ // Estimates live solely on the vacancy detail page.
+ if(j.salary)parent.append(make("p","salary-label",j.salary));
 }
 function card(j){
  const a=make("a","job");a.href=linkFor(j);
@@ -19,7 +20,7 @@ function card(j){
  salaryDisplay(j,body);
  const tags=make("div","tags");
  [...new Set([j.category,fmt(j),city(j),j.level].filter(Boolean))].forEach(x=>tags.append(make("span","tag",x)));
- body.append(tags);a.append(body,make("span","job-open","Подробнее"));return a;
+ body.append(tags);a.append(body);return a;
 }
 function filter(){
  const q=$("query").value.trim().toLocaleLowerCase("ru"),cat=$("category").value,format=$("workFormat").value,lvl=$("level").value,ct=$("city").value,pay=$("salary").value;
