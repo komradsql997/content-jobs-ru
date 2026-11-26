@@ -64,6 +64,10 @@ def employer(raw):
         name=match.group(1)
         if name.lower() not in ("команда","компания","ищет","ищут","редактора","копирайтера"):
             return name
+    head=" ".join(text.splitlines()[:2])
+    match=re.search(r"\bдля\s+([A-ZА-ЯЁ][A-Za-zА-Яа-яЁё0-9.\-]{2,}(?:\s+(?:pro|банк|group|media))?)\b",head)
+    if match and match.group(1).lower() not in ("россии","москвы","работы"):
+        return match.group(1).strip()
     return UNKNOWN
 
 def stated_pay(raw):

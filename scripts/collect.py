@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
-from job_quality import market_guess
+from job_quality import market_guess, stated_pay
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_FILE = ROOT / "sources.json"
@@ -195,7 +195,7 @@ def parse_detail(url,company,location_hint=""):
     else:
         m=RU.search(full_text[:900])
         if m: location=m.group(0)
-    return make_job(title,company,url,excerpt,location_hint or location)
+    return make_job(title,company,url,excerpt,location_hint or location,stated_pay(excerpt))
 
 
 def collect_company(source):
@@ -236,6 +236,21 @@ def collect_company(source):
         stats["status"]="NO_MATCHES_IN_CHECKED_PAGES" if stats["candidate_links"] or stats["listing_pages"] else "NO_LISTING_DATA"
     return name,result,stats
 
+def same_vacancy_text(a,b):
+    """Merge identical syndicated roles using their distinctive responsibilities."""
+    if a.get("category")!=b.get("category"):return False
+    name_a=str(a.get("company") or "").casefold()
+    name_b=str(b.get("company") or "").casefold()
+    if not name_a or name_a=="работодатель не указан" or name_a!=name_b:return False
+    def shingles(raw):
+        words=re.findall(r"[a-zа-яё0-9]+",str(raw).casefold())
+        return {" ".join(words[i:i+5]) for i in range(max(0,len(words)-4))}
+    x=shingles(a.get("description") or "")
+    y=shingles(b.get("description") or "")
+    if len(x)<50 or len(y)<50:return False
+    count=sum(1 for item in x if item in y)
+    return count>=40 and count/min(len(x),len(y))>=.72
+
 def merge_jobs(existing,incoming):
     all_jobs=[]
     for job in existing+incoming:
@@ -243,7 +258,7 @@ def merge_jobs(existing,incoming):
         for saved in all_jobs:
             same_link=job["url"]==saved["url"]
             same_name=(job["company"].casefold()==saved["company"].casefold() and difflib.SequenceMatcher(None,job["title"].casefold(),saved["title"].casefold()).ratio()>=.96 and difflib.SequenceMatcher(None,job.get("description","")[:900].casefold(),saved.get("description","")[:900].casefold()).ratio()>=.75)
-            if same_link or same_name:matched=saved;break
+            if same_link or same_name or same_vacancy_text(job,saved):matched=saved;break
         if matched:
             links={s["url"]:s for s in matched.get("sources",[])+job.get("sources",[])}
             matched["sources"]=list(links.values())
