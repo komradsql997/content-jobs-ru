@@ -12,6 +12,7 @@ from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 from bs4 import BeautifulSoup
 from collect import ROOT, FEED, STAMP, is_role, FOREIGN, RU, make_job, merge_jobs, apply_salary_estimates
+from job_quality import clean_post, clean_title, employer, stated_pay
 
 CATALOG=ROOT/"source_catalog.json"
 ARCHIVE=ROOT/"data/telegram_public_jobs.json"
@@ -39,29 +40,21 @@ def text_lines(raw):
     return [x for x in lines if x and len(x)>3]
 
 def job_title(raw):
-    lines=text_lines(raw)
+    lines=text_lines(clean_post(raw))
     if not lines:return ""
     beginning=" ".join(lines[:2]).lower()
     if re.search(r"^резюме\b|^ищу\s+работу|^подборк[аи]\s+ваканс|^ищет\s+работу|^анкета\s+кандидата",beginning,re.I):
         return ""
-    # Posts about an entirely different role must not be classified by their duties.
     if re.search(r"\b(?:видеограф|видеооператор|дизайнер|монтаж[её]р)\b",lines[0],re.I) and not is_role(lines[0]):
         return ""
     for line in lines[:6]:
-        line=START.sub("",line)
-        line=re.sub(r"^(?:должность|позиция|роль)\s*[:—–-]?\s*", "", line, flags=re.I)
-        line=re.sub(r"^.*?\bищет\s+(?=[^\n]{0,40}(?:редактор|копирайт|smm|контент))","",line,flags=re.I)
-        if re.match(r"^(?:участвовать|помогать|поддерживать|создавать|разрабатывать|писать|подбирать|анализировать|следить|мониторить|проводить|публиковать)\b",line,re.I):
-            continue
-        if 5<=len(line)<=105 and is_role(line):
-            return line.strip(" !,.;")
+        line=clean_title(line)
+        if re.match(r"^(?:участвовать|помогать|поддерживать|создавать|разрабатывать|писать|подбирать|анализировать|следить|мониторить|проводить|публиковать)\b",line,re.I):continue
+        if 5<=len(line)<=120 and is_role(line):return line
         for piece in re.split(r"\s*[|•]\s*",line)[:3]:
+            piece=clean_title(piece)
             if 5<=len(piece)<=90 and is_role(piece):return piece
     return ""
-
-def company(raw):
-    m=re.search(r"(?im)^\s*(?:компания|работодатель|проект)\s*[:—–-]\s*(.{2,90})$",raw)
-    return m.group(1).strip() if m else "Работодатель не указан"
 
 def location(raw):
     if FOREIGN.search(raw[:1500]):return ""
@@ -99,7 +92,7 @@ def parse_preview(html, channel, now=None):
         if not date or not dt.timedelta(0)<=now-date<dt.timedelta(days=MAX_AGE):continue
         content=block.select_one(".tgme_widget_message_text")
         if not content:continue
-        raw=content.get_text("\n",strip=True)
+        raw=clean_post(content.get_text("\n",strip=True))
         if len(raw)<30 or BLACKLIST.search(raw[:600]):continue
         title=job_title(raw)
         if not title:continue
@@ -107,12 +100,12 @@ def parse_preview(html, channel, now=None):
         region=location(raw)
         if not region:continue
         url="https://t.me/"+post
-        j=make_job(title,company(raw),url,raw[:5800],region,salary(raw))
+        j=make_job(title,employer(raw),url,raw[:5800],region,stated_pay(raw))
         if not j:continue
         j["id"]="telegram-"+post.replace("/","-")
         j["channel"]=channel
         j["source_kind"]="telegram_public"
-        j["extraction_version"]=2
+        j["extraction_version"]=3
         j["seen_at"]=date.astimezone(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00","Z")
         j["first_seen_at"]=j["seen_at"]
         j["sources"]=[{"name":"Telegram · @"+channel,"url":url}]
@@ -162,7 +155,7 @@ def retain(jobs):
         try:
             # Old parser output included resumes and action sentences as job titles.
             # Refresh from the public source rather than retaining low-quality cached cards.
-            if int(j.get("extraction_version",0))<2:continue
+            if int(j.get("extraction_version",0))<3:continue
             moment=dt.datetime.fromisoformat(j["seen_at"].replace("Z","+00:00"))
             if dt.timedelta(0)<=now-moment<dt.timedelta(days=MAX_AGE):out.append(j)
         except (TypeError,ValueError,KeyError):pass

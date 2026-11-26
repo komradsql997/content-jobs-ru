@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
+from job_quality import market_guess
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_FILE = ROOT / "sources.json"
@@ -74,27 +75,11 @@ def infer_city(location):
     return location if len(location)<35 else ""
 
 def apply_salary_estimates(jobs):
-    """Estimate only from real salary figures in our dataset; never use invented reference ranges."""
+    """Uniform salary policy: quoted employer pay or a labeled market guess, never both."""
     for job in jobs:
-        job["salary_estimate"]=""
-        job["salary_estimate_basis"]=0
-    groups={}
-    for j in jobs:
-        if not j.get("salary"): continue
-        nums=[int(x.replace(" ","")) for x in re.findall(r"\d[\d ]{3,}\d",j["salary"])]
-        nums=[n for n in nums if 30000<=n<=900000]
-        if not nums:continue
-        value=sum(nums[:2])/len(nums[:2])
-        groups.setdefault((j.get("category"),j.get("level")),[]).append(value)
-    for job in jobs:
-        if job.get("salary"):continue
-        nums=groups.get((job.get("category"),job.get("level")),[])
-        if len(nums)<3:continue
-        nums=sorted(nums)
-        lo=round(nums[max(0,len(nums)//4)]/1000)*1000
-        hi=round(nums[min(len(nums)-1,(3*len(nums))//4)]/1000)*1000
-        job["salary_estimate"]=f"{int(lo)//1000}–{int(hi)//1000} тыс. ₽"
-        job["salary_estimate_basis"]=len(nums)
+        job["salary_estimate"] = market_guess(job)
+        job["salary_estimate_basis"] = 0
+        job["salary_estimate_source"] = "market_guess_2026" if job["salary_estimate"] else ""
 
 def score(job):
     desc = job.get("description", "")
