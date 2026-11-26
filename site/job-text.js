@@ -63,9 +63,9 @@
     for(let i=0;i<markers.length;i++){
       const start=markers[i].bodyStart,end=i+1<markers.length?markers[i+1].start:raw.length;
       const block=raw.slice(start,end).replace(/^[\s:：—–-]+/,"").trim();
+      const kind=markers[i].kind;
       const items=splitLong(block,kind);
       if(!items.length)continue;
-      const kind=markers[i].kind;
       const previous=sections[sections.length-1];
       if(previous&&previous.kind===kind){previous.items.push(...items)}
       else sections.push({kind,title:labels[kind],items});
