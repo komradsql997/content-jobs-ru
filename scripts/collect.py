@@ -183,7 +183,7 @@ def make_job(title,company,url,description="",location="",salary=""):
     u=canonical(url)
     job={"title":title,"company":company,"url":u,"sources":[{"name":company,"url":u}],"description":description,"location":location,"salary":salary,"category":category(title),"seen_at":STAMP,"first_seen_at":STAMP,"level":infer_level(title),"work_format":infer_format(location,description),"city":infer_city(location),"salary_estimate":"","salary_estimate_basis":0}
     job["score"]=score(job)
-    job["id"]=hashlib.sha256((company.lower()+"|"+title.lower()).encode()).hexdigest()[:16]
+    job["id"]=hashlib.sha256(u.encode("utf-8")).hexdigest()[:20]
     return job
 
 def parse_detail(url,company,location_hint=""):

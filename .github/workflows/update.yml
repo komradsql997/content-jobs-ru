@@ -38,11 +38,14 @@ jobs:
         run: |
           node --check site/job-text.js
           node --check site/app.js
+          node --check site/job-detail.js
           node --test tests/test_job_text.cjs
       - name: Собрать российские вакансии
         run: python scripts/collect.py
       - name: Сбор вакансий из публичных Telegram-каналов
         run: python scripts/telegram_public.py
+      - name: Создать отдельные страницы вакансий
+        run: python scripts/build_job_pages.py
       - name: Проверить каталог карьерных источников
         run: python scripts/source_audit.py
       - name: Сохранить диагностический отчёт
@@ -62,7 +65,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin main
           git reset --mixed origin/main
-          git add site/jobs.json data/telegram_public_jobs.json
+          git add site/jobs.json data/telegram_public_jobs.json site/job-history.json site/v
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh vacancies"
             git push
