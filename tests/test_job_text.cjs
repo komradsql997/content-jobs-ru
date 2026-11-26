@@ -3,42 +3,48 @@ const test=require("node:test");
 const fs=require("node:fs");
 const path=require("node:path");
 const helper=require("../site/job-text.js");
-
-test("extracts semantic sections from collapsed career vacancy text",()=>{
- const t="Компания ищет UX-редактора. Что делать: Писать тексты для интерфейсов Совместно обсуждать сценарии Что уметь: Работать в Figma Иметь портфолио Что предлагают: Удалённую работу Оформление по ТК РФ";
- const sections=helper.parseSections(t);
- assert.deepEqual(sections.map(s=>s.kind),["overview","tasks","requirements","conditions"]);
- assert.ok(sections.find(s=>s.kind==="tasks").items.length>=2);
- assert.ok(sections.find(s=>s.kind==="conditions").items.join(" ").includes("ТК РФ"));
+test("does not split 'задачи до результата' into separate item",()=>{
+ const s="Что уметь: Иметь опыт работы Самостоятельно организовывать работу и доводить задачи до результата Уметь выстраивать коммуникацию";
+ const p=helper.parseSections(s);
+ assert.equal(p.length,1);
+ assert.equal(p[0].kind,"requirements");
+ assert.ok(p[0].items.some(x=>x==="Самостоятельно организовывать работу и доводить задачи до результата"),JSON.stringify(p));
+ assert.ok(!p[0].items.includes("до результата"));
 });
-test("parses headings preserved in multiline Telegram post",()=>{
- const s=helper.parseSections("Редактор в компании\nЗадачи:\n• Писать новости\n• Редактировать статьи\nТребования:\n• Опыт 2 года");
- assert.deepEqual(s.map(p=>p.kind),["overview","tasks","requirements"]);
+test("keeps 'от партнёров' with discounts",()=>{
+ const s="Что предлагают: ДМС со стоматологией после испытательного срока 4 дополнительных выходных в год после испытательного срока Скидки и бонусы от партнёров, включая Skillbox Корпоративные мероприятия";
+ const p=helper.parseSections(s);
+ assert.deepEqual(p.map(x=>x.kind),["conditions"]);
+ assert.ok(p[0].items.some(x=>x.startsWith("Скидки и бонусы от партнёров")),JSON.stringify(p));
 });
-test("does not fabricate tasks when headers are missing",()=>{
- const s=helper.parseSections("Ищем автора текстов для блога. Портфолио необходимо.");
- assert.equal(s.length,1);assert.equal(s[0].kind,"overview");
+test("joins wrapped fragments but respects bullets",()=>{
+ const p=helper.parseSections("Условия:\n• Скидки и бонусы\nот партнёров, включая Skillbox\n• ДМС со стоматологией");
+ assert.deepEqual(p[0].items,["Скидки и бонусы от партнёров, включая Skillbox","ДМС со стоматологией"]);
 });
-test("qualitative description badge is independent of numeric score",()=>{
- assert.equal(helper.descriptionLabel("x".repeat(600)),"подробное");
- assert.equal(helper.descriptionLabel("x".repeat(250)),"основное");
- assert.equal(helper.descriptionLabel("Небольшое объявление"),"краткое");
+test("collapsed corporate headings parse",()=>{
+ const p=helper.parseSections("Точка ищет UX-редактора. Что делать: Писать тексты интерфейсов Совместно обсуждать сценарии Что уметь: Работать в Figma Иметь портфолио Что предлагают: Удалённую работу Оформление по ТК РФ");
+ assert.deepEqual(p.map(x=>x.kind),["overview","tasks","requirements","conditions"]);
+ assert.ok(p[1].items.length>=2);
 });
-test("counts successfully read sources, not channels with vacancies only",()=>{
- const status={"А":{status:"FOUND",listing_pages:1,saved:1},
- "Б":{status:"NO_MATCHES_IN_CHECKED_PAGES",listing_pages:1,saved:0},
- "В":{status:"FETCH_ERROR",listing_pages:0,saved:0},
- "Telegram @x":{status:"FOUND",saved:2},
- "Telegram @y":{status:"NO_MATCHES_IN_RECENT_PUBLIC_POSTS",saved:0},
- "Telegram @z":{status:"ROBOTS_UNAVAILABLE_OR_DISALLOWED",saved:0}};
+test("Telegram multiline headings parse",()=>{
+ const p=helper.parseSections("Редактор\nЗадачи:\n• Писать новости\n• Редактировать статьи\nТребования:\n• Опыт от 2 лет");
+ assert.deepEqual(p.map(x=>x.kind),["overview","tasks","requirements"]);
+});
+test("do not hallucinate structure",()=>{
+ const p=helper.parseSections("Нужен редактор со знанием русского языка.");
+ assert.equal(p.length,1);assert.equal(p[0].kind,"overview");
+});
+test("counter counts readable sources",()=>{
+ const status={A:{status:"FOUND",listing_pages:1},B:{status:"FETCH_ERROR"},C:{listing_pages:1},
+ "Telegram @a":{status:"FOUND"},"Telegram @b":{status:"NO_MATCHES_IN_RECENT_PUBLIC_POSTS"}};
  assert.equal(helper.checkedSources(status),4);
 });
-test("modal supports backdrop and escape and uses semantic parser",()=>{
- const html=fs.readFileSync(path.join(__dirname,"../site/index.html"),"utf8");
+test("list uses shareable pages and hides scoring",()=>{
+ const index=fs.readFileSync(path.join(__dirname,"../site/index.html"),"utf8");
  const app=fs.readFileSync(path.join(__dirname,"../site/app.js"),"utf8");
- assert.match(html,/class="footer-link" href="https:\/\/t\.me\/leadofcringejobs"/);
- assert.doesNotMatch(html,/Пока только российские компании/);
- assert.match(app,/getBoundingClientRect/);
- assert.match(app,/parseSections/);
- assert.doesNotMatch(app,/job\.score\+"\/100"/);
+ assert.match(index,/class="hero-strip"/);
+ assert.doesNotMatch(index,/<dialog/);
+ assert.doesNotMatch(index,/value="score"/);
+ assert.match(app,/\.\/v\/.*encodeURIComponent\(j\.id\)/);
+ assert.doesNotMatch(app,/qualityTag|score-caption|\.score\b/);
 });

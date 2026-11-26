@@ -12,7 +12,8 @@
     {kind:"overview",text:/^(?:описание вакансии|о вакансии|о компании)(?![а-яё])/i}
   ];
   const headerRegex=/(?:^|\s)(какие задачи вас ждут|чем предстоит заниматься|что предстоит делать|что делать|ваши задачи|основные задачи|обязанности|задачи|что уметь|что мы жд[её]м|что ожидаем|кого мы ищем|наши ожидания|требования к кандидату|требования|что потребуется|будет плюсом|желательно|что предлагают|что предлагаем|мы предлагаем|условия работы|условия|что вы получите|бонусы|что дадим|предлагаем|описание вакансии|о вакансии|о компании)(?=\s|:|：|—|–|$)/gi;
-  const actionVerbs=/\s+(?=(?:Писать|Разрабатывать|Редактировать|Проверять|Организовывать|Создавать|Вести|Совместно|Следить|Предлагать|Иметь|Понимать|Работать|Применять|Самостоятельно|Уметь|Готовить|Анализировать|Публиковать|Поддерживать|ДМС|Оформление|Пятидневную|Удал[её]нную|Бесплатное|Возможность)(?=[\s,.;:!?]|$))/g;
+  const actionVerbs=/\s+(?=(?:Писать|Разрабатывать|Редактировать|Проверять|Организовывать|Создавать|Вести|Совместно|Следить|Предлагать|Иметь|Понимать|Работать|Применять|Самостоятельно|Уметь|Готовить|Анализировать|Публиковать|Поддерживать|ДМС|Оформление|Пятидневную|Удал[её]нную|Бесплатное|Возможность|Скидки|Корпоративные|Продуманную|Профессиональное|Получать|Отслеживать|Проведение|4 дополнительных)(?=[\s,.;:!?]|$))/g;
+  const dangling=/(\b(?:и|или|но|от|до|без|с|со|по|на|для|под|в|к|у|за|из|после)\s*|[,;:—–-])$/i;
   function normalize(value){
     return String(value||"").replace(/\r\n?/g,"\n").replace(/\u00a0/g," ")
       .replace(/[ \t]+/g," ").replace(/ *\n */g,"\n").replace(/\n{3,}/g,"\n\n").trim();
@@ -22,25 +23,28 @@
     return "overview";
   }
   function splitLong(text,kind="overview"){
-    const raw=normalize(text).replace(/^[•●\-–—]\s*/gm,"").trim();
+    const raw=normalize(text);
     if(!raw)return [];
-    let parts=raw.split(/\n+/).map(x=>x.trim()).filter(Boolean);
-    if(parts.length<2&&kind!=="overview"&&raw.length>30){
-      parts=raw.replace(actionVerbs,"\n").split(/\n+/).map(x=>x.trim()).filter(Boolean);
+    const merged=[];
+    for(const original of raw.split(/\n+/)){
+      const line=original.trim();
+      if(!line)continue;
+      const bullet=/^(?:[•●]\s+|[-–—]\s+)/.test(line);
+      const cleaned=line.replace(/^(?:[•●]\s+|[-–—]\s+)/,"").trim();
+      const prev=merged[merged.length-1];
+      // HTML inline fragments must not become separate bullets.
+      if(prev&&!bullet&&(/^[а-яё]/.test(cleaned)||dangling.test(prev)))
+        merged[merged.length-1]=prev+" "+cleaned;
+      else merged.push(cleaned);
     }
-    if(parts.length<2&&raw.length>280){
-      parts=raw.split(/(?<=[.!?;])\s+(?=[А-ЯЁA-Z])/).map(x=>x.trim()).filter(Boolean);
+    const items=[];
+    for(const line of merged){
+      const parts=kind!=="overview"&&line.length>85?
+        line.replace(actionVerbs,"\n").split("\n"): [line];
+      // Never split at arbitrary word counts or ordinary nouns like "задачи".
+      for(const part of parts)if(part.trim())items.push(part.trim());
     }
-    if(parts.length<2&&raw.length>340){
-      const words=raw.split(" "),chunks=[];let current="";
-      for(const word of words){
-        if(current.length>240&&current.length+word.length>300){chunks.push(current.trim());current="";}
-        current+=(current?" ":"")+word;
-      }
-      if(current)chunks.push(current.trim());
-      parts=chunks;
-    }
-    return parts.map(x=>x.replace(/^[•●\-–—]\s*/,"").trim()).filter(Boolean);
+    return items;
   }
   function parseSections(description,title){
     let raw=normalize(description);
@@ -52,8 +56,14 @@
     const markers=[];
     for(const match of raw.matchAll(headerRegex)){
       const h=match[1];
-      const start=match.index+(match[0].startsWith(" ")?1:0);
+      const start=match.index+match[0].length-h.length;
       const bodyStart=match.index+match[0].length;
+      const before=raw.slice(0,start),after=raw.slice(bodyStart);
+      const beginsLine=start===0||/\n\s*$/.test(before);
+      const separator=/^\s*[:：—–]/.test(after);
+      const generic=/^(?:задачи|обязанности|требования|условия|бонусы|предлагаем|желательно|описание вакансии)$/i.test(h);
+      if(generic&&!separator&&!beginsLine)continue;
+      if(!generic&&!separator&&!beginsLine&&h[0]===h[0].toLocaleLowerCase("ru"))continue;
       markers.push({start,bodyStart,kind:kindForHeading(h)});
     }
     if(!markers.length)return [{kind:"overview",title:labels.overview,items:splitLong(raw)}];
