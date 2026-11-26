@@ -34,6 +34,11 @@ jobs:
         run: pip install -r requirements.txt
       - name: Проверить логику
         run: python -m unittest discover -s tests -v
+      - name: Проверить интерфейс и форматирование карточек
+        run: |
+          node --check site/job-text.js
+          node --check site/app.js
+          node --test tests/test_job_text.cjs
       - name: Собрать российские вакансии
         run: python scripts/collect.py
       - name: Сбор вакансий из публичных Telegram-каналов

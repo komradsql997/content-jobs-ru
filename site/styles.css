@@ -19,3 +19,71 @@
 .desc{line-height:1.6}
 @media(max-width:850px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters input{grid-column:1/-1}}
 @media(max-width:520px){.filters{grid-template-columns:1fr}.filters input{grid-column:1}.head{gap:10px}.logo{font-size:15px}.logo img{width:38px;height:38px}.updated-main{font-size:18px}.hero{padding:32px 0 26px}.hero p{font-size:16px}.score .info::after{right:-12px;width:210px}}
+
+
+/* Interface refinements, Nov 2026 */
+.logo img{border-radius:50%;object-fit:cover}
+.hero{padding:42px 0 38px}
+.stats{display:flex;flex-wrap:wrap;align-items:baseline;gap:28px;margin-top:32px}
+.stat-item{display:flex!important;align-items:baseline;gap:11px}
+.stat-item span{font-size:16px;color:var(--muted);font-weight:550}
+.stat-item strong{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.1}
+select{
+  -webkit-appearance:none;appearance:none;
+  padding-right:48px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2352645a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 18px center;background-size:17px 17px;
+}
+.footer-link{font-weight:800;text-decoration:none}
+.footer-link:hover,.footer-link:focus-visible{color:var(--green);text-decoration:underline}
+.job .score{align-self:start;display:flex;flex-direction:row;align-items:center;gap:5px;
+  width:auto;min-width:0;height:auto;min-height:32px;
+  border-radius:8px;background:transparent;text-align:left;color:#647068;
+}
+.job .score .score-caption{font-size:12px;font-weight:650;line-height:1.35;
+  padding:6px 9px;border-radius:8px;background:#f1f4f1;white-space:nowrap;
+}
+.job .score .info{position:relative;top:auto;right:auto;display:inline-flex;align-items:center;
+  justify-content:center;flex-shrink:0;width:20px;height:20px;font-size:11px;
+  border-color:#cbd8d1;background:#fff;color:#687b71;
+}
+.job .score .info::after{width:260px;right:0;bottom:calc(100% + 10px)}
+.job{grid-template-columns:minmax(0,1fr) auto;gap:12px}
+.job h3{overflow-wrap:anywhere}
+#details{
+  position:fixed;inset:0;margin:auto;max-height:84vh;
+  max-width:calc(100vw - 30px);width:min(720px,calc(100vw - 30px));
+  padding:34px 38px 38px;overflow-y:auto;overscroll-behavior:contain;
+  border-radius:18px;box-shadow:0 22px 80px #0004;
+}
+#details::backdrop{background:rgba(17,32,24,.64)}
+#details h2{font-size:26px;line-height:1.25;letter-spacing:-.035em;margin:8px 32px 12px 0}
+#details .modal-meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 14px}
+#details .modal-pay{font-size:17px;font-weight:750;margin:12px 0}
+#details .modal-clarification{margin:8px 0 18px;font-size:12px;line-height:1.45;color:var(--muted)}
+#details .modal-section{margin-top:25px;padding-top:22px;border-top:1px solid var(--line)}
+#details .modal-section h3{font-size:18px;line-height:1.3;font-weight:760;margin:0 0 13px}
+#details .modal-section p{font-size:15px;line-height:1.75;margin:0 0 12px;color:#405048;white-space:pre-line}
+#details .modal-section ul{padding-left:20px;margin:0;display:grid;gap:9px}
+#details .modal-section li{font-size:15px;line-height:1.65;color:#405048;overflow-wrap:anywhere}
+#details .modal-section li::marker{color:#6d927e}
+#details .modal-summary{color:var(--muted);font-size:13px;line-height:1.55}
+#details .modal-summary strong{color:var(--ink)}
+#details .modal-links{margin-top:18px}
+#details .apply{display:inline-block;margin-top:25px}
+#details .close{top:18px;right:20px;position:sticky;float:right;
+  width:34px;height:34px;line-height:30px;font-size:28px;text-align:center;
+  border:1px solid var(--line);border-radius:50%;background:#fff;z-index:5;
+}
+#details .salary-estimate{margin:12px 0;font-size:14px}
+@media(max-width:680px){
+  .stats{gap:16px;align-items:stretch}
+  .stat-item{flex-wrap:wrap;gap:4px!important}
+  .stat-item span{font-size:14px}
+  .stat-item strong{font-size:24px}
+  .job{display:block}
+  .job .score{margin-top:12px;justify-content:flex-start}
+  .job .score .info::after{right:auto;left:0;max-width:65vw}
+  #details{padding:24px 20px;max-height:88vh}
+  #details h2{font-size:23px}
+}
