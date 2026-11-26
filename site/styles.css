@@ -87,3 +87,50 @@ select{
   #details{padding:24px 20px;max-height:88vh}
   #details h2{font-size:23px}
 }
+
+/* November 26 release — concise statistics and shareable jobs */
+.hero{padding:23px 0 23px}
+.hero-strip{display:flex;flex-wrap:wrap;align-items:center;gap:5px 27px}
+.hero-data{font-size:14px;font-weight:600;line-height:1.6;color:var(--muted);white-space:nowrap}
+.hero-data strong{font-size:14px;font-weight:700;color:var(--ink);letter-spacing:0}
+.hero-data:first-child strong{color:var(--green)}
+.board{padding-top:28px}
+.job{display:flex;gap:14px;justify-content:space-between;align-items:flex-start;text-decoration:none}
+.job-body{min-width:0;flex:1}
+.job h3{color:var(--ink)}
+.job-open{align-self:center;white-space:nowrap;font-size:13px;font-weight:650;color:var(--green)}
+.job:hover .job-open{text-decoration:underline}
+.job:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.job .score{display:none}
+.job-page{max-width:795px;margin:31px auto 70px}
+.job-breadcrumb{display:inline-block;text-decoration:none;color:var(--green);font-weight:650;margin:0 0 21px;font-size:14px}
+.job-breadcrumb:hover{text-decoration:underline}
+.job-header{padding:29px 33px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.job-header h1{font-size:clamp(25px,3.6vw,35px);line-height:1.2;letter-spacing:-.045em;margin:0 0 12px}
+.job-subtitle{font-size:15px;color:var(--muted);margin:0}
+.job-header .tags{margin-top:16px}
+.job-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:23px}
+.job-actions .apply{margin:0}
+.job-copy{border:1px solid var(--line);border-radius:9px;background:#fff;padding:12px 18px;color:var(--ink);font:600 14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;cursor:pointer}
+.job-copy:hover{border-color:var(--green);color:var(--green)}
+.job-description{background:#fff;border:1px solid var(--line);border-radius:16px;margin-top:16px;padding:11px 34px 34px}
+.job-description .modal-section{margin-top:23px;padding-top:23px;border-top:1px solid var(--line)}
+.job-description .modal-section:first-child{border-top:none;padding-top:10px;margin-top:0}
+.job-description .modal-section h2{font-size:19px;margin:0 0 14px;letter-spacing:-.02em}
+.job-description .modal-section p,.job-description .modal-section li{font-size:15px;line-height:1.75;color:#405048}
+.job-description .modal-section p{margin:0 0 13px;white-space:pre-wrap;overflow-wrap:anywhere}
+.job-description .modal-section ul{margin:0;padding-left:22px;list-style:disc;display:grid;gap:9px}
+.job-description .modal-section li{overflow-wrap:anywhere}
+.job-description .modal-section li::marker{color:#6d927e}
+.job-availability{margin:16px 0 0;padding:13px 16px;border:1px solid #efddb7;background:#fff8e9;border-radius:10px;color:#6c512f}
+.job-detail-empty{padding:32px;background:#fff;border:1px solid var(--line);border-radius:14px}
+@media(max-width:680px){
+ .hero{padding:17px 0 19px}
+ .hero-strip{gap:3px 16px}
+ .hero-data,.hero-data strong{font-size:13px;white-space:normal}
+ .job{display:flex;gap:8px}
+ .job-open{font-size:12px}
+ .job-header{padding:22px 20px}
+ .job-description{padding:12px 20px 24px}
+ .job-page{margin:21px auto 50px}
+}

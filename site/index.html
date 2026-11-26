@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Главред проверил вакансию — работа в контенте</title>
-<meta name="description" content="Вакансии российских компаний для редакторов, копирайтеров, UX-писателей и контент-маркетологов. Поиск, фильтры, оценка информативности.">
-<link rel="icon" type="image/svg+xml" href="./favicon.svg?v=4"><link rel="stylesheet" href="./styles.css?v=5"><script defer src="./job-text.js?v=5"></script><script defer src="./app.js?v=5"></script></head>
+<meta name="description" content="Вакансии российских компаний для редакторов, копирайтеров, UX-писателей и контент-маркетологов. Поиск, фильтры и свежие вакансии для специалистов по контенту.">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg?v=4"><link rel="stylesheet" href="./styles.css?v=8"><script defer src="./job-text.js?v=8"></script><script defer src="./app.js?v=8"></script></head>
 <body><header><div class="wrap head"><a href="./" class="logo"><img src="./brand.jpg?v=3" alt="" width="42" height="42"><span>Главред проверил вакансию</span></a><span class="pill">Бета-версия</span></div></header>
-<main class="wrap"><section class="hero"><div class="overline updated-main" id="lastUpdated">Последнее обновление: загружаем данные…</div><div class="stats" aria-label="Статистика вакансий"><div class="stat-item"><span>Проверено источников:</span><strong id="sources" aria-live="polite">—</strong></div><div class="stat-item"><span>Найдено вакансий:</span><strong id="total" aria-live="polite">—</strong></div></div></section>
-<section class="board"><div class="board-title"><div><span class="eyebrow">01 / Вакансии</span><h2>Найди своё место</h2></div><span class="updated" id="updated"></span></div>
+<main class="wrap"><section class="hero" aria-label="Статистика сайта"><div class="hero-strip"><span class="hero-data">Последнее обновление вакансий: <strong id="lastUpdated">загружаем…</strong></span><span class="hero-data">Проверено источников: <strong id="sources">—</strong></span><span class="hero-data">Найдено вакансий: <strong id="total">—</strong></span></div></section>
+<section class="board"><div class="board-title"><div><span class="eyebrow">01 / Вакансии</span><h2>Найди своё место</h2></div></div>
 <div class="filters">
 <input id="query" type="search" placeholder="Профессия, компания, ключевое слово" aria-label="Поиск">
 <select id="category" aria-label="Специализация"><option value="">Все специализации</option><option>Редактура</option><option>UX-тексты</option><option>Копирайтинг</option><option>Контент-маркетинг</option><option>SMM</option><option>Технические тексты</option><option>Руководство</option></select>
@@ -13,9 +13,9 @@
 <select id="level" aria-label="Опыт работы"><option value="">Любой опыт</option><option value="intern">Стажёр</option><option value="junior">Junior</option><option value="middle">Middle</option><option value="senior">Senior</option><option value="lead">Lead</option></select>
 <select id="city" aria-label="Город"><option value="">Все города</option></select>
 <select id="salary" aria-label="Доход"><option value="">Любой доход</option><option value="yes">Зарплата указана</option><option value="estimate">Есть ориентир</option><option value="100000">От 100 000 ₽</option><option value="150000">От 150 000 ₽</option><option value="200000">От 200 000 ₽</option></select>
-<select id="sort" aria-label="Сортировка"><option value="fresh">Сначала новые</option><option value="score">По информативности</option></select>
+<select id="sort" aria-label="Сортировка"><option value="fresh">Сначала новые</option><option value="salaryFirst">Сначала с зарплатой</option></select>
 </div>
 <div class="results"><span id="count">Загружаем...</span><button id="clear">Сбросить фильтры</button></div><div id="jobs" class="jobs"></div><button id="more" class="more" hidden>Показать ещё</button></section>
 </main>
 <footer><div class="wrap foot"><a class="footer-link" href="https://t.me/leadofcringejobs" target="_blank" rel="noopener noreferrer">Главред проверил вакансию</a><span>Работа в контенте · Россия · 2026</span></div></footer>
-<dialog id="details" aria-label="Подробности вакансии"><button id="close" type="button" aria-label="Закрыть окно вакансии" class="close">×</button><div id="detailsContent"></div></dialog></body></html>
+</body></html>
