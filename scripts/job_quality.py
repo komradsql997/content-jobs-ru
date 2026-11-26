@@ -9,7 +9,7 @@ AD_FOOTER = re.compile(
     r"|Реклама в канале|Подписаться на канал\s*:)\b.*$"
 )
 DIVIDER = re.compile(r"^[\s➖▬—–\-_/⚡️📣•·]+$")
-PIECE_RATE = re.compile(r"(?:за\s+(?:1\s*)?(?:публикаци[юию]|пост|статью|материал)|за\s+\d+\s*(?:публикаци[и]|поста|статьи))",re.I)
+PIECE_RATE = re.compile(r"(?:за\s+(?:1\s*)?(?:публикаци\w*|пост\w*|статью|материал)|\(\s*1\s+(?:публикаци\w*|пост\w*|стат\w*)\s*\)|за\s+\d+\s*(?:публикаци\w*|поста|статьи))",re.I)
 PAY_MONEY = re.compile(r"(?<!\d)(\d(?:[\d \u00a0]{2,10}\d)?)\s*(₽|руб(?:лей|ля|\.)?)",re.I)
 COMPANY_LABEL = re.compile(r"(?im)^\s*(?:компания|работодатель|проект|организация|заказчик)\s*[:—–-]\s*(.{2,90})$")
 ROLE_ACCU = [
@@ -54,7 +54,7 @@ def employer(raw):
     match=COMPANY_LABEL.search(text)
     if match:return match.group(1).strip(" .,:;—–")
     # "Работодатель" and the name may be on separate lines.
-    match=re.search(r"(?im)^\s*(?:работодатель|название платформы|название компании)\s*:\s*\n\s*([^\n]{3,70})",text)
+    match=re.search(r"(?im)^\s*(?:(?:работодатель|название платформы|название компании)\s*:?)\s*\n\s*([^\n]{3,70})",text)
     if match:return match.group(1).strip(" .,:;—–")
     match=re.search(r"(?im)^\s*Название платформы:\s*([^\n]{3,70})",text)
     if match:return match.group(1).strip(" .,:;—–")
@@ -71,7 +71,7 @@ def stated_pay(raw):
     text=clean_post(raw)
     lines=text.splitlines()
     for idx,line in enumerate(lines):
-        payment_context=bool(re.search(r"\b(?:заработн|зарплат|оклад|вознаграждени|оплата труда|з/п|зп\b|уровень заработной платы|ставка)\b",line,re.I))
+        payment_context=bool(re.search(r"\b(?:заработн\w*|зарплат\w*|оклад\w*|вознаграждени\w*|оплата труда|з/п|зп\b|уровень заработной платы|ставка)",line,re.I))
         by_piece=bool(PIECE_RATE.search(line))
         if not (payment_context or by_piece):continue
         possible=line+" "+(" ".join(lines[idx+1:idx+3]) if payment_context else "")
