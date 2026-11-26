@@ -39,7 +39,7 @@
     }
     const items=[];
     for(const line of merged){
-      const parts=kind!=="overview"&&line.length>85?
+      const parts=kind!=="overview"&&line.length>40?
         line.replace(actionVerbs,"\n").split("\n"): [line];
       // Never split at arbitrary word counts or ordinary nouns like "задачи".
       for(const part of parts)if(part.trim())items.push(part.trim());
