@@ -5,7 +5,7 @@ from collect import make_job,merge_jobs,same_vacancy_text
 
 class SyndicationTests(unittest.TestCase):
  def test_same_vacancy_from_two_sources_is_merged(self):
-  body="Готовить и публиковать SEO-статьи и лонгриды для медиа Нетологии. Работать с авторами и экспертами, подбирать темы, готовить материалы для публикации. "*7
+  body=" ".join(f"Готовить и публиковать SEO-статьи и лонгриды Нетологии на тему {i}. Работать с экспертами и редакторами, готовить материалы для публикации проекта {i}." for i in range(32))
   a=make_job("Редактор в Медиа","Нетология","https://netology.ru/job/123",body,"Россия")
   b=make_job("Редактор","Нетология","https://t.me/channel_name/456",body,"Россия")
   self.assertTrue(same_vacancy_text(a,b))
